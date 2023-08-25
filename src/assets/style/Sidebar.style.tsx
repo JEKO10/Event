@@ -3,10 +3,11 @@ import { styled } from "styled-components";
 export const Side = styled.ul`
   background-color: #7fbaf4;
   position: absolute;
-  top: 10rem;
+  top: 5rem;
   left: 4rem;
+  margin-top: 5rem;
   list-style-type: none;
-  border-radius: 5px;
+  border-radius: 15px;
   border: 1px solid #000;
 
   li {

@@ -45,13 +45,13 @@ export const HeroSection = styled.section`
     overflow: hidden;
     cursor: pointer;
 
-    /* &:hover ${NewsInfo} {
-      transform: translateY(0%);
-    } */
-
     &:first-of-type {
       ${flexMixin({ justify: "center", align: "center" })};
       grid-row: 1 / span 2; /* The left image spans both rows */
+    }
+
+    &:hover img {
+      transform: scale(1.1);
     }
 
     img {
@@ -59,6 +59,7 @@ export const HeroSection = styled.section`
       height: 100%;
       display: block;
       object-fit: cover;
+      transition: all 500ms ease;
     }
   }
 `;
