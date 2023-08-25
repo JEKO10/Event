@@ -33,5 +33,9 @@ export const GlobalStyles = React.memo(
       border: 0;
       box-sizing: border-box;
     }
+
+    body {
+      font-family: "Bricolage Grotesque", sans-serif;
+    }
   `}`
 );

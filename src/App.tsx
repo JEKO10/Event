@@ -1,4 +1,5 @@
 import { GlobalStyles } from "./assets/style/GlobalStyles";
+import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
       <GlobalStyles />
       <main>
         <Navbar />
+        <Hero />
       </main>
     </>
   );
