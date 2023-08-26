@@ -1,21 +1,21 @@
 [
   {
     "id": 0,
-    "path": "/u-beranama-naucni-skup",
+    "path": "u-beranama-naucni-skup",
     "title": "Prvi naučni skup u Beranama",
     "body": "Prvi naučni skup u Beranama... Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos veritatis officiis, doloremque nulla repellat iste exercitationem recusandae impedit, dolor pariatur repellendus sed laboriosam dicta. Mollitia aliquam sequi quas repellat cum eum sit iure sint dolorem accusantium, accusamus enim quos atque quae quisquam consectetur ipsum architecto soluta maiores facere aliquid. Delectus?",
     "img": "src/assets/images/img1.jpg"
   },
   {
     "id": 1,
-    "path": "/rad-naseg-istaknutog-pisca",
+    "path": "procitajte-rad-naseg-istaknutog-pisca",
     "title": "Pročitajte rad našeg istaknutog pisca",
     "body": "Pročitajte rad našeg istaknutog pisca... Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos veritatis officiis, doloremque nulla repellat iste exercitationem recusandae impedit, dolor pariatur repellendus sed laboriosam dicta. Mollitia aliquam sequi quas repellat cum eum sit iure sint dolorem accusantium, accusamus enim quos atque quae quisquam consectetur ipsum architecto soluta maiores facere aliquid. Delectus?",
     "img": "src/assets/images/img2.jpg"
   },
   {
     "id": 2,
-    "path": "/prijavite-vaš-rad",
+    "path": "prijavite-vaš-rad",
     "title": "Prijavite vaš rad na ovom sajtu",
     "body": "Prijavite vaš rad na ovom sajtu... Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos veritatis officiis, doloremque nulla repellat iste exercitationem recusandae impedit, dolor pariatur repellendus sed laboriosam dicta. Mollitia aliquam sequi quas repellat cum eum sit iure sint dolorem accusantium, accusamus enim quos atque quae quisquam consectetur ipsum architecto soluta maiores facere aliquid. Delectus?",
     "img": "src/assets/images/img3.jpg"

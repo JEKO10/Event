@@ -1,4 +1,5 @@
 import Home from "../pages/Home";
+import SingleNewPage from "../pages/SingleNewPage";
 
 const routes = [
   {
@@ -6,11 +7,11 @@ const routes = [
     path: "/",
     element: Home,
   },
-  //   {
-  //     id: 8,
-  //     path: "/movie/:id",
-  //     element: SingleMovie,
-  //   },
+  {
+    id: 1,
+    path: "/:path",
+    element: SingleNewPage,
+  },
   //   {
   //     id: 12,
   //     path: "/*",
