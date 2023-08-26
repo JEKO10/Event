@@ -4,7 +4,7 @@ export const SidebarContainer = styled.section`
   position: absolute;
   top: 5rem;
   left: 4rem;
-  height: 100%;
+  height: 150%;
 `;
 
 export const Side = styled.ul`

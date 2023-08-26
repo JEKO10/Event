@@ -50,6 +50,7 @@ export const RightSide = styled.article`
   img {
     height: auto;
     width: 150px;
+    /* width: 230px; */
     margin: 1.5rem 0;
   }
 `;

@@ -37,7 +37,7 @@ export const HeroSection = styled.section`
   max-width: 60vw;
   margin: 4rem auto;
 
-  > div {
+  > a {
     ${flexMixin({ justify: "center", align: "center" })};
     height: 100%;
     width: 100%;
