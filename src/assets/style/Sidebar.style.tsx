@@ -1,4 +1,10 @@
 import { styled } from "styled-components";
+import { flexMixin } from "./GlobalStyles";
+
+type RightSideProps = {
+  top: number;
+  margin?: number;
+};
 
 export const SidebarContainer = styled.section`
   position: absolute;
@@ -33,5 +39,21 @@ export const Side = styled.ul`
     &:last-of-type {
       border-bottom: none;
     }
+  }
+`;
+
+export const RightSide = styled.article<RightSideProps>`
+  ${flexMixin({ justify: "center", align: "center" })};
+  flex-direction: column;
+  position: absolute;
+  top: ${({ top }) => top + "rem"};
+  right: 4rem;
+  margin-right: ${({ margin }) => margin + "rem"};
+
+  img {
+    height: auto;
+    width: 150px;
+    /* width: 230px; */
+    margin: 1.5rem 0;
   }
 `;

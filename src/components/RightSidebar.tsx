@@ -1,4 +1,4 @@
-import { RightSide } from "../assets/style/GlobalStyles";
+import { RightSide } from "../assets/style/Sidebar.style";
 import Survey from "./Survey";
 import Logo from "../assets/images/logo.png";
 import cikom from "../assets/images/cikom.png";
@@ -8,10 +8,20 @@ import Ieee from "../assets/images/ieee.gif";
 import Ugd from "../assets/images/udg.svg";
 import Ucg from "../assets/images/ucg.png";
 
-const RightSidebar = () => {
+type RightSidebarProps = {
+  top: number;
+  margin?: number | undefined;
+  isSurvey: boolean;
+};
+
+const RightSidebar: React.FC<RightSidebarProps> = ({
+  top,
+  isSurvey,
+  margin,
+}) => {
   return (
-    <RightSide>
-      <Survey />
+    <RightSide top={top} margin={margin}>
+      {isSurvey && <Survey />}
       <img src={Logo} alt="Logo" />
       <img src={Etf} alt="Etf" />
       <img src={cikom} alt="cikom" />

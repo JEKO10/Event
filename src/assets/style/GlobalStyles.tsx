@@ -1,5 +1,5 @@
 import React from "react";
-import { createGlobalStyle, css, styled } from "styled-components";
+import { createGlobalStyle, css } from "styled-components";
 
 interface IFlexMixin {
   justify:
@@ -39,18 +39,3 @@ export const GlobalStyles = React.memo(
     }
   `}`
 );
-
-export const RightSide = styled.article`
-  ${flexMixin({ justify: "center", align: "center" })};
-  flex-direction: column;
-  position: absolute;
-  top: 5rem;
-  right: 4rem;
-
-  img {
-    height: auto;
-    width: 150px;
-    /* width: 230px; */
-    margin: 1.5rem 0;
-  }
-`;

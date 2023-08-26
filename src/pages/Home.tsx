@@ -7,7 +7,7 @@ const Home = () => {
     <>
       <Hero />
       <Sidebar />
-      <RightSidebar />
+      <RightSidebar top={5} isSurvey={true} />
     </>
   );
 };

@@ -2,11 +2,14 @@ import Logo from "../assets/images/logo.png";
 import { Flags, Nav } from "../assets/style/Navbar.style";
 import mne from "../assets/images/mne.png";
 import uk from "../assets/images/uk.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <Nav>
-      <img src={Logo} alt="Logo" />
+      <Link to="/">
+        <img src={Logo} alt="Logo" />
+      </Link>
       <ul>
         <li>
           <a>Info</a>
