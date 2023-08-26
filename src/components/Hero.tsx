@@ -9,22 +9,22 @@ const Hero = () => {
       <div>
         <img src={img1} alt="img1" />
         <NewsInfo>
-          <h2>Naslov</h2>
-          <p>Pocetak teskta... Lorem ipsum, dolor sit amet consectetur...</p>
+          <h2>Naslov teksta ili rada</h2>
+          <p>U Beranama se od 1. do 9. septembra održava naučni sk...</p>
         </NewsInfo>
       </div>
       <div>
         <img src={img2} alt="img2" />
         <NewsInfo>
-          <h2>Naslov</h2>
-          <p>Pocetak teskta... Lorem ipsum, dolor sit amet consectetur...</p>
+          <h2>Naslov teksta ili rada</h2>
+          <p>U Beranama se od 1. do 9. septembra održava naučni sk...</p>
         </NewsInfo>
       </div>
       <div>
         <img src={img3} alt="img3" />
         <NewsInfo>
-          <h2>Naslov</h2>
-          <p>Pocetak teskta... Lorem ipsum, dolor sit amet consectetur...</p>
+          <h2>Naslov teksta ili rada</h2>
+          <p>U Beranama se od 1. do 9. septembra održava naučni sk...</p>
         </NewsInfo>
       </div>
     </HeroSection>

@@ -48,8 +48,8 @@ export const RightSide = styled.article`
   right: 4rem;
 
   img {
-    height: 200px;
-    width: auto;
+    height: auto;
+    width: 150px;
     margin: 1.5rem 0;
   }
 `;

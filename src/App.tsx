@@ -1,21 +1,11 @@
-import { GlobalStyles, RightSide } from "./assets/style/GlobalStyles";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
-import Survey from "./components/Survey";
-import Logo from "./assets/images/logo.png";
+import { GlobalStyles } from "./assets/style/GlobalStyles";
+import RouterProvider from "./router/RouterProvider";
 
 function App() {
   return (
     <>
       <GlobalStyles />
-      <Navbar />
-      <Hero />
-      <Sidebar />
-      <RightSide>
-        <Survey />
-        <img src={Logo} alt="Logo" />
-      </RightSide>
+      <RouterProvider />
     </>
   );
 }
