@@ -3,9 +3,6 @@ import { flexMixin } from "./GlobalStyles";
 
 export const SurveyContainer = styled.section`
   background-color: #7fbaf4;
-  position: absolute;
-  top: 5rem;
-  right: 4rem;
   padding: 20px;
   margin-top: 5rem;
   list-style-type: none;

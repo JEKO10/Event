@@ -8,7 +8,7 @@ export const Nav = styled.nav`
 
   img {
     height: auto;
-    width: 50px;
+    width: 55px;
   }
 
   ul {
