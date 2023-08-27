@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import newsData from "../news.json";
 import { Header, Hero, NewInfo } from "../assets/style/SingleNewPage.style";
 import RightSidebar from "../components/RightSidebar";
+import Sidebar from "../components/Sidebar";
 
 const SingleNewPage = () => {
   const { path } = useParams();
@@ -22,16 +23,19 @@ const SingleNewPage = () => {
           <h1>{news.title}</h1>
         </Hero>
       </Header>
-      <NewInfo>
-        <p>{firstParagraph}</p>
-        <img src={news.img} alt="img" />
-        {restParagraphs.map((paragraph, index) => (
-          <>
-            <p key={index}>{paragraph}</p> <br />
-          </>
-        ))}
-      </NewInfo>
-      <RightSidebar top={50} isSurvey={false} margin={5} />
+      <main>
+        <Sidebar />
+        <NewInfo>
+          <p>{firstParagraph}</p>
+          <img src={news.img} alt="img" />
+          {restParagraphs.map((paragraph, index) => (
+            <>
+              <p key={index}>{paragraph}</p> <br />
+            </>
+          ))}
+        </NewInfo>
+        <RightSidebar top={50} isSurvey={false} margin={0} />
+      </main>
     </>
   );
 };

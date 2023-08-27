@@ -4,7 +4,7 @@ import { flexMixin } from "./GlobalStyles";
 export const SurveyContainer = styled.section`
   background-color: #7fbaf4;
   padding: 20px;
-  /* margin-top: 5rem; */
+  margin-bottom: 1.5rem;
   list-style-type: none;
   border-radius: 15px;
   border: 1px solid #000;

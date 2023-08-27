@@ -53,6 +53,6 @@ export const RightSide = styled.article<RightSideProps>`
     height: auto;
     width: 150px;
     /* width: 230px; */
-    margin: 1.5rem 0;
+    margin-bottom: 1.5rem;
   }
 `;

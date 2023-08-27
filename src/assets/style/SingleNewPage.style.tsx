@@ -23,8 +23,8 @@ export const Hero = styled.section`
 `;
 
 export const NewInfo = styled.article`
-  max-width: 40vw;
-  margin: 4rem auto;
+  max-width: 60vw;
+  margin: 0 auto;
 
   p {
     font-size: 20px;
