@@ -36,6 +36,11 @@ export const GlobalStyles = React.memo(
 
     body {
       font-family: "Bricolage Grotesque", sans-serif;
+      overflow-x: hidden;
     }
+
+    /* main {
+      ${flexMixin({ justify: "space-between", align: "flex-start" })};
+    } */
   `}`
 );

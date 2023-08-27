@@ -26,16 +26,17 @@ export const NewsInfo = styled.div`
 `;
 
 export const HeroSection = styled.section`
+  height: 70vh;
   max-height: 100vh;
+  min-height: 500px;
   display: grid;
   grid-template-columns: 1fr 1fr; /* Two equal columns */
   grid-template-rows: 50% 50%; /* Two rows, each 50% of the height */
-  height: 70vh; /* Full viewport height */
   gap: 10px;
   justify-items: center; /* Center items horizontally */
   align-items: center; /* Center items vertically */
   max-width: 60vw;
-  margin: 4rem auto;
+  margin: 3rem auto;
 
   > a {
     ${flexMixin({ justify: "center", align: "center" })};
