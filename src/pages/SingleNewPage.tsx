@@ -11,19 +11,25 @@ const SingleNewPage = () => {
     return <div>Nemamo informacije o toj stranici.</div>;
   }
 
+  const paragraphs = news.body.split("\n");
+  const firstParagraph = paragraphs[0];
+  const restParagraphs = paragraphs.slice(1);
+
   return (
     <>
-      <Header img={news.img}>
+      <Header img={news.banner}>
         <Hero>
           <h1>{news.title}</h1>
         </Hero>
       </Header>
       <NewInfo>
-        <p
-          dangerouslySetInnerHTML={{
-            __html: news.body.replace(/\n/g, "<br>"),
-          }}
-        />
+        <p>{firstParagraph}</p>
+        <img src={news.img} alt="img" />
+        {restParagraphs.map((paragraph, index) => (
+          <>
+            <p key={index}>{paragraph}</p> <br />
+          </>
+        ))}
       </NewInfo>
       <RightSidebar top={50} isSurvey={false} margin={5} />
     </>

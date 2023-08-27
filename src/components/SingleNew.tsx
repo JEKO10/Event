@@ -7,13 +7,13 @@ type SingleNewProps = {
   path: string;
   title: string;
   body: string;
-  img: string;
+  banner: string;
 };
 
-const SingleNew: React.FC<SingleNewProps> = ({ img, path, title, body }) => {
+const SingleNew: React.FC<SingleNewProps> = ({ banner, path, title, body }) => {
   return (
     <Link to={path}>
-      <img src={img} alt="img" />
+      <img src={banner} alt="img" />
       <NewsInfo>
         <h2>{title}</h2>
         <p>{body.slice(0, 55)}...</p>

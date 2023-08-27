@@ -31,4 +31,10 @@ export const NewInfo = styled.article`
     line-height: 30px;
     word-spacing: 0px;
   }
+
+  img {
+    height: auto;
+    width: 100%;
+    margin: 2rem 0;
+  }
 `;
