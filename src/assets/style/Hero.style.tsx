@@ -36,7 +36,7 @@ export const HeroSection = styled.section`
   justify-items: center; /* Center items horizontally */
   align-items: center; /* Center items vertically */
   max-width: 60vw;
-  margin: 3rem auto;
+  margin: 0 auto;
 
   > a {
     ${flexMixin({ justify: "center", align: "center" })};

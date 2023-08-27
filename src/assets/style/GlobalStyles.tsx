@@ -39,8 +39,10 @@ export const GlobalStyles = React.memo(
       overflow-x: hidden;
     }
 
-    /* main {
+    main {
       ${flexMixin({ justify: "space-between", align: "flex-start" })};
-    } */
+      margin-top: 3rem;
+      padding: 0 50px;
+    }
   `}`
 );

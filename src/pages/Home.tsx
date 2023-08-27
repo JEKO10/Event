@@ -4,11 +4,11 @@ import Sidebar from "../components/Sidebar";
 
 const Home = () => {
   return (
-    <>
-      <Hero />
+    <main>
       <Sidebar />
+      <Hero />
       <RightSidebar top={5} isSurvey={true} />
-    </>
+    </main>
   );
 };
 

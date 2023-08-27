@@ -7,7 +7,7 @@ type RightSideProps = {
 };
 
 export const SidebarContainer = styled.section`
-  position: absolute;
+  /* position: absolute; */
   top: 5rem;
   left: 4rem;
   height: 150%;
@@ -18,11 +18,10 @@ export const Side = styled.ul`
   position: sticky;
   top: 1rem;
   left: 4rem;
-  margin-top: 5rem;
   list-style-type: none;
   border-radius: 5px;
   border: 1px solid #000;
-  height: 550px;
+  /* height: 550px; */
 
   li {
     padding: 10px 25px;
@@ -45,7 +44,7 @@ export const Side = styled.ul`
 export const RightSide = styled.article<RightSideProps>`
   ${flexMixin({ justify: "center", align: "center" })};
   flex-direction: column;
-  position: absolute;
+  /* position: absolute; */
   top: ${({ top }) => top + "rem"};
   right: 4rem;
   margin-right: ${({ margin }) => margin + "rem"};
