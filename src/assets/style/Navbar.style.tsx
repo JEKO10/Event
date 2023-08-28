@@ -18,7 +18,7 @@ export const Nav = styled.nav`
 
     li {
       margin: 0 30px;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       cursor: pointer;
 
       a {

@@ -8,10 +8,21 @@ const Socials = () => {
     <SocialsContainer>
       <img src={Logo} alt="Logo" />
       <article>
-        <BsFacebook />
-        <TfiWorld />
-        <BsInstagram />
-        <BsTwitter />
+        <a
+          href="https://www.facebook.com/OpstinaBerane/?locale=sr_RS"
+          target="__blank"
+        >
+          <BsFacebook />
+        </a>
+        <a href="https://berane.me/" target="__blank">
+          <TfiWorld />
+        </a>
+        <a href="https://www.instagram.com/opstinaberane/" target="__blank">
+          <BsInstagram />
+        </a>
+        <a href="https://twitter.com/OpstinaBerane">
+          <BsTwitter />
+        </a>
       </article>
     </SocialsContainer>
   );
