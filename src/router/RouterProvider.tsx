@@ -2,6 +2,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Navbar from "../components/Navbar";
 import routes from "./routes";
+import Footer from "../components/Footer";
+import Socials from "../components/Socials";
 
 function RouterProvider() {
   return (
@@ -14,6 +16,8 @@ function RouterProvider() {
           ))}
         </Routes>
       </>
+      <Socials />
+      <Footer />
     </Router>
   );
 }
