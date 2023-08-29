@@ -15,7 +15,7 @@ export const HeaderContainer = styled.section`
 
   > section {
     ${flexMixin({ justify: "center", align: "center" })};
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 `;
 
@@ -26,6 +26,13 @@ export const Hero = styled.section`
   width: 766px; */
   border-radius: 20px;
   backdrop-filter: blur(3px);
+  // 4 i 5 se bolje vidi
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   padding: 40px 80px;
+`;
+
+export const Stroke = styled.img`
+  height: 68px;
+  width: 100%;
+  margin-top: -2rem;
 `;
