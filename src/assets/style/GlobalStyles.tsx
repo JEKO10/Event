@@ -35,14 +35,8 @@ export const GlobalStyles = React.memo(
     }
 
     body {
-      font-family: "Bricolage Grotesque", sans-serif;
+      font-family: "Outfit", sans-serif;
       overflow-x: hidden;
-    }
-
-    main {
-      ${flexMixin({ justify: "space-between", align: "flex-start" })};
-      margin-top: 3rem;
-      padding: 0 50px;
     }
   `}`
 );

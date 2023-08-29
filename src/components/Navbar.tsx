@@ -5,7 +5,7 @@ const Navbar = () => {
     <Nav>
       <ul>
         <li>
-          <a>Info</a>
+          <a>O Beranama</a>
         </li>
         <li>
           <a>Cilj konferencije</a>
@@ -13,18 +13,18 @@ const Navbar = () => {
         <li>
           <a>Teme konferencije</a>
         </li>
-        <li>
+        {/* <li>
           <a>Odbori</a>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <a>Sponzori</a>
-        </li>
+        </li> */}
         <li>
           <a>Raspored sekcija</a>
         </li>
-        <li>
+        {/* <li>
           <a>Foto galerija</a>
-        </li>
+        </li> */}
         <li>
           <a>Program konferencije</a>
         </li>

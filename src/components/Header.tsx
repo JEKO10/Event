@@ -1,12 +1,16 @@
 import { HeaderContainer, Hero } from "../assets/style/Header.style";
 import HeroImg from "../assets/images/hero.png";
+import Navbar from "./Navbar";
 
 const Header = () => {
   return (
     <HeaderContainer>
-      <Hero>
-        <img src={HeroImg} alt="HeroImg" />
-      </Hero>
+      <Navbar />
+      <section>
+        <Hero>
+          <img src={HeroImg} alt="HeroImg" />
+        </Hero>
+      </section>
     </HeaderContainer>
   );
 };
