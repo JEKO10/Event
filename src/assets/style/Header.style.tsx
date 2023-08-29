@@ -18,9 +18,12 @@ export const HeaderContainer = styled.section`
 
 export const Hero = styled.section`
   ${flexMixin({ justify: "center", align: "center" })};
-  background-color: rgba(255, 255, 255, 0.5);
+  /* margin-top: 8rem; */
+  background-color: rgba(255, 255, 255, 0.1);
   height: 362px;
   width: 766px;
   border-radius: 25px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   /* padding: 40px 80px; */
 `;
