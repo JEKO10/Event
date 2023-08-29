@@ -1,15 +1,8 @@
-import Logo from "../assets/images/logo.png";
-import { Flags, Nav } from "../assets/style/Navbar.style";
-import mne from "../assets/images/mne.png";
-import uk from "../assets/images/uk.png";
-import { Link } from "react-router-dom";
+import { Nav } from "../assets/style/Navbar.style";
 
 const Navbar = () => {
   return (
     <Nav>
-      <Link to="/">
-        <img src={Logo} alt="Logo" />
-      </Link>
       <ul>
         <li>
           <a>Info</a>
@@ -36,10 +29,6 @@ const Navbar = () => {
           <a>Program konferencije</a>
         </li>
       </ul>
-      <Flags>
-        <img src={mne} alt="mne" />
-        <img src={uk} alt="uk" />
-      </Flags>
     </Nav>
   );
 };

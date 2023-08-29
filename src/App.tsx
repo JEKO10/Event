@@ -1,11 +1,11 @@
 import { GlobalStyles } from "./assets/style/GlobalStyles";
-import RouterProvider from "./router/RouterProvider";
+import Header from "./components/Header";
 
 function App() {
   return (
     <>
       <GlobalStyles />
-      <RouterProvider />
+      <Header />
     </>
   );
 }
