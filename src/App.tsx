@@ -2,6 +2,7 @@ import { GlobalStyles } from "./assets/style/GlobalStyles";
 import Header from "./components/Header";
 import StrokeImg from "./assets/images/stroke.png";
 import { Stroke } from "./assets/style/Header.style";
+import MainContainer from "./components/MainContainer";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <GlobalStyles />
       <Header />
       <Stroke src={StrokeImg} alt="StrokeImg" />
+      <MainContainer />
     </>
   );
 }
