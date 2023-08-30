@@ -1,3 +1,4 @@
+import { Main } from "../assets/style/Sidebar.style";
 import Sidebar from "./Sidebar";
 import newsData from "../news.json";
 
@@ -5,7 +6,7 @@ const MainContainer = () => {
   const news = newsData[0];
 
   return (
-    <main>
+    <Main>
       <Sidebar />
       <div>
         <h1>
@@ -18,7 +19,7 @@ const MainContainer = () => {
         />
       </div>
       <Sidebar />
-    </main>
+    </Main>
   );
 };
 
