@@ -6,7 +6,11 @@ export const Main = styled.main`
   margin: 4rem 0;
   padding: 0 50px;
 
-  > div {
+  > section > img {
+    margin-bottom: 2rem;
+  }
+
+  > article {
     padding: 0 50px;
 
     h1 {
@@ -36,7 +40,7 @@ export const Side = styled.ul`
   left: 4rem;
   width: 350px;
   list-style-type: none;
-  border-radius: 5px;
+  border-radius: 0 15px 15px 0;
   /* border: 1px solid #000; */
   /* height: 550px; */
 
