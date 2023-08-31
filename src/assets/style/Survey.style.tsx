@@ -12,6 +12,7 @@ export const SurveyContainer = styled.section`
   /* border: 1px solid #000; */
 
   h2 {
+    font-size: 2rem;
     font-weight: 500;
     margin-bottom: 1rem;
     text-align: center;
@@ -25,7 +26,7 @@ export const SurveyContainer = styled.section`
     text-align: center;
 
     label {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       text-transform: uppercase;
     }
 
@@ -45,7 +46,7 @@ export const SurveyContainer = styled.section`
         ${flexMixin({ justify: "flex-start", align: "center" })};
 
         p {
-          font-size: 1.2rem;
+          font-size: 1.3rem;
           margin: 0 0.5rem;
         }
       }

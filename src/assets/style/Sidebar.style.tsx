@@ -6,8 +6,23 @@ export const Main = styled.main`
   margin: 4rem 0;
   padding: 0 50px;
 
-  > section > img {
-    margin-bottom: 2rem;
+  > section {
+    &:first-of-type {
+      height: 3000px;
+    }
+
+    > img {
+      margin-bottom: 2rem;
+    }
+
+    > div {
+      ${flexMixin({ justify: "flex-end", align: "center" })};
+      width: 100%;
+
+      > img {
+        margin-bottom: 2rem;
+      }
+    }
   }
 
   > article {
