@@ -1,6 +1,9 @@
 import React from "react";
 import { createGlobalStyle, css } from "styled-components";
 
+export const primaryColor = "#004574";
+export const secondaryColor = "#8dc63f";
+export const primaryFont = "Hanken Grotesk, sans-serif";
 interface IFlexMixin {
   justify:
     | "center"

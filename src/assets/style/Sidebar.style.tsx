@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { flexMixin } from "./GlobalStyles";
+import { flexMixin, primaryColor, secondaryColor } from "./GlobalStyles";
 
 export const Main = styled.main`
   ${flexMixin({ justify: "space-between", align: "flex-start" })};
@@ -36,7 +36,7 @@ export const Main = styled.main`
       margin-bottom: 2rem;
 
       span {
-        color: #8dc63f;
+        color: ${secondaryColor};
         /* text-transform: initial; */
       }
     }
@@ -49,7 +49,7 @@ export const Main = styled.main`
 `;
 
 export const Side = styled.ul`
-  background-color: #004574;
+  background-color: ${primaryColor};
   position: sticky;
   top: 1rem;
   left: 4rem;
@@ -69,7 +69,7 @@ export const Side = styled.ul`
     transition: all 200ms ease;
 
     &:hover {
-      color: #8dc63f;
+      color: ${secondaryColor};
     }
 
     &:last-of-type {

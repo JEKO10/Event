@@ -1,8 +1,8 @@
 import { styled } from "styled-components";
-import { flexMixin } from "./GlobalStyles";
+import { flexMixin, primaryColor, secondaryColor } from "./GlobalStyles";
 
 export const SurveyContainer = styled.section`
-  background-color: #004574;
+  background-color: ${primaryColor};
   color: #fff;
   width: 350px;
   padding: 20px;
@@ -18,7 +18,7 @@ export const SurveyContainer = styled.section`
     text-align: center;
 
     span {
-      color: #8dc63f;
+      color: ${secondaryColor};
     }
   }
 
@@ -41,8 +41,8 @@ export const SurveyContainer = styled.section`
       margin: 1rem 1rem 1rem 0.5rem;
 
       &[type="button"] {
-        background-color: #8dc63f;
-        color: #004574;
+        background-color: ${secondaryColor};
+        color: ${primaryColor};
         height: auto;
         width: 100%;
         font-size: 1.5rem;
