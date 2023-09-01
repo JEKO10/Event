@@ -24,6 +24,7 @@ const Survey = () => {
     surveyPostId: "addece68-e4b8-4d21-94ef-c984d02b70f4",
     logoPosition: "right",
     completeText: "Glasaj",
+    cookieName: "IZpera",
     pages: [
       {
         name: "page1",
@@ -49,7 +50,8 @@ const Survey = () => {
         ],
       },
     ],
-    completedHtml: "<p>Hvala vam što ste uspešno završili anketu!</p>",
+    completedHtml: "<p>Hvala Vam što ste uspješno završili anketu!</p>",
+    completedBeforeHtml: "<p>Hvala Vam što ste uspješno završili anketu!</p>",
   };
 
   const handleGetResult = (_: SurveyModel, options: GetResultEvent) => {

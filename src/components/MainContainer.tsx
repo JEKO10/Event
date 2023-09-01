@@ -4,8 +4,6 @@ import newsData from "../news.json";
 import Survey from "./Survey";
 
 const MainContainer = () => {
-  const news = newsData[0];
-
   return (
     <Main>
       <Sidebar />
@@ -15,7 +13,7 @@ const MainContainer = () => {
         </h1>
         <p
           dangerouslySetInnerHTML={{
-            __html: news.body.replace(/\n/g, "<br>"),
+            __html: newsData[1].body.replace(/\n/g, "<br>"),
           }}
         />
       </article>

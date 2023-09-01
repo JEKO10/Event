@@ -8,7 +8,7 @@ export const Main = styled.main`
 
   > section {
     &:first-of-type {
-      height: 3000px;
+      height: 1500px;
     }
 
     > img {
@@ -61,7 +61,7 @@ export const Side = styled.ul`
 
   li {
     padding: 10px 25px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #fff;
     text-transform: uppercase;
     border-bottom: 1px solid #fff;
