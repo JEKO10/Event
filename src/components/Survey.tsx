@@ -2,15 +2,22 @@ import { useState } from "react";
 import { SurveyContainer } from "../assets/style/Survey.style";
 import SurveyImg from "../assets/images/survey.png";
 import { useEffect } from "react";
-import { SurveyModel, GetResultEvent } from "survey-react";
-import * as SurveyReact from "survey-react";
-import { Model } from "survey-react";
+import * as ReactSurvey from "survey-react";
+import { SurveyModel, GetResultEvent, Model } from "survey-react";
 
 const Survey = () => {
   const [answers, setAnswers] = useState<{
     Da: number;
     Ne: number;
   }>({ Da: 0, Ne: 0 });
+
+  const calculatePercentage = (responseCount: number, totalCount: number) => {
+    return ((responseCount / totalCount) * 100).toFixed(1);
+  };
+
+  const totalResponses = answers.Da + answers.Ne;
+  const yesPercentage = calculatePercentage(answers.Da, totalResponses);
+  const noPercentage = calculatePercentage(answers.Ne, totalResponses);
 
   const surveyJson = {
     surveyId: "7541edd9-d48e-448f-b47b-f7da2024afed",
@@ -90,7 +97,7 @@ const Survey = () => {
           Da li ćete doći na <br /> <span> IZperaBA</span>?
         </h2>
         <article>
-          <SurveyReact.Survey
+          <ReactSurvey.Survey
             onComplete={handleSurveyComplete}
             json={surveyJson}
           />
@@ -107,8 +114,8 @@ const Survey = () => {
               <label>Da, dolazim</label>
             </div> */}
             <div>
-              <p>Glasova: {answers.Da}</p>
-              <p>32%</p>
+              <p>Glasovi za da: {answers.Da}</p>
+              <p>{yesPercentage}%</p>
             </div>
           </div>
           <div>
@@ -124,8 +131,8 @@ const Survey = () => {
               <label>Ne, ne dolazim</label>
             </div> */}
             <div>
-              <p>Glasova: {answers.Ne}</p>
-              <p>32%</p>
+              <p>Glasova za ne: {answers.Ne}</p>
+              <p>{noPercentage}%</p>
             </div>
           </div>
         </article>

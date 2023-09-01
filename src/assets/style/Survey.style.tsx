@@ -62,7 +62,8 @@ export const SurveyContainer = styled.section`
       flex-direction: column;
 
       > div {
-        ${flexMixin({ justify: "flex-start", align: "center" })};
+        ${flexMixin({ justify: "space-around", align: "center" })};
+        width: 100%;
 
         p {
           font-size: 1.3rem;
