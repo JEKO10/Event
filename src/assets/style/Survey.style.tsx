@@ -30,11 +30,30 @@ export const SurveyContainer = styled.section`
       text-transform: uppercase;
     }
 
+    svg {
+      display: none;
+    }
+
     input {
       width: 20px;
       height: 20px;
       background-color: #fff;
       margin: 1rem 1rem 1rem 0.5rem;
+
+      &[type="button"] {
+        background-color: #8dc63f;
+        color: #004574;
+        height: auto;
+        width: 100%;
+        font-size: 1.5rem;
+        font-family: "Outfit", sans-serif;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-top: 1rem;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
     }
 
     > div {
@@ -53,7 +72,7 @@ export const SurveyContainer = styled.section`
     }
   }
 
-  button {
+  /* button {
     width: 100%;
     background-color: #0b27f1;
     color: #fff;
@@ -62,7 +81,7 @@ export const SurveyContainer = styled.section`
     margin-top: 1rem;
     border-radius: 5px;
     cursor: pointer;
-  }
+  } */
 `;
 
 //  article {
