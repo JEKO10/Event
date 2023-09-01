@@ -1,11 +1,14 @@
+import { useState } from "react";
 import { Side } from "../assets/style/Sidebar.style";
 import Menu from "../assets/images/menu.png";
 
 const Sidebar = () => {
+  const [showDropdown, setShowDropdown] = useState(false);
+
   return (
     <section>
       <img src={Menu} alt="Menu" />
-      <Side>
+      <Side showDropdown={showDropdown}>
         <li>
           <a>O Beranama</a>
         </li>
@@ -19,7 +22,15 @@ const Sidebar = () => {
           <a>Cilj konferencije</a>
         </li>
         <li>
-          <a>Odbori</a>
+          <a onClick={() => setShowDropdown(!showDropdown)}>Odbori</a>
+          <ul>
+            <li>
+              <a>Item 1</a>
+            </li>
+            <li>
+              <a>Item 2</a>
+            </li>
+          </ul>
         </li>
         <li>
           <a>Prijava radova</a>

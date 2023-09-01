@@ -1,5 +1,9 @@
-import { styled } from "styled-components";
+import { css, styled } from "styled-components";
 import { flexMixin, primaryColor, secondaryColor } from "./GlobalStyles";
+
+type SidebarProps = {
+  showDropdown: boolean;
+};
 
 export const Main = styled.main`
   ${flexMixin({ justify: "space-between", align: "flex-start" })};
@@ -48,7 +52,7 @@ export const Main = styled.main`
   }
 `;
 
-export const Side = styled.ul`
+export const Side = styled.ul<SidebarProps>`
   background-color: ${primaryColor};
   position: sticky;
   top: 1rem;
@@ -60,7 +64,6 @@ export const Side = styled.ul`
   /* height: 550px; */
 
   li {
-    padding: 10px 25px;
     font-size: 1.2rem;
     color: #fff;
     text-transform: uppercase;
@@ -74,6 +77,31 @@ export const Side = styled.ul`
 
     &:last-of-type {
       border-bottom: none;
+    }
+
+    a {
+      display: block;
+      padding: 10px 25px;
+    }
+
+    ul {
+      max-height: 0;
+      list-style-type: none;
+      ${({ showDropdown }) =>
+        showDropdown &&
+        css`
+          max-height: 200px; /* Adjust this value as needed */
+        `}
+      overflow: hidden;
+      transition: max-height 500ms ease-out;
+
+      li {
+        padding: 10px 55px;
+
+        a {
+          padding: 0;
+        }
+      }
     }
   }
 `;

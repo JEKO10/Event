@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { flexMixin, primaryColor, secondaryColor } from "./GlobalStyles";
+import { flexMixin } from "./GlobalStyles";
 
 export const NewsInfo = styled.div`
   position: absolute;
@@ -15,7 +15,7 @@ export const NewsInfo = styled.div`
 
   h2 {
     margin-bottom: 0.5rem;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 500;
   }
 
