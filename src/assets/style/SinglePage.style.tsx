@@ -1,6 +1,34 @@
 import { styled } from "styled-components";
 import { flexMixin, secondaryColor } from "./GlobalStyles";
 
+export const Nav = styled.nav`
+  ${flexMixin({ justify: "space-between", align: "center" })};
+  background-color: #007fd5;
+  padding: 20px 40px;
+
+  img {
+    height: 80px;
+  }
+
+  ul {
+    ${flexMixin({ justify: "space-between", align: "center" })};
+    color: #fff;
+    list-style-type: none;
+
+    li {
+      font-size: 28.8px;
+      text-transform: uppercase;
+      margin: 0 32px;
+      cursor: pointer;
+      transition: all 200ms ease;
+
+      &:hover {
+        color: ${secondaryColor};
+      }
+    }
+  }
+`;
+
 export const Header = styled.section`
   ${flexMixin({ justify: "space-between", align: "flex-start" })};
   margin: 80px 0;

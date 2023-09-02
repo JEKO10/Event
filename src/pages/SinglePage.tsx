@@ -4,12 +4,14 @@ import { Header, Image, Main } from "../assets/style/SinglePage.style";
 import Sidebar from "../components/Sidebar";
 import Berane from "../assets/images/berane.jpg";
 import Centar from "../assets/images/centar.jpg";
+import SinglePageNav from "../components/SinglePageNav";
 
 const SinglePage = () => {
   // const { path } = useParams();
 
   return (
     <>
+      <SinglePageNav />
       <Header>
         <Sidebar />
         <article>
