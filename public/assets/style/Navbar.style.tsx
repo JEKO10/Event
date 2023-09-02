@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { flexMixin, secondaryColor } from "./GlobalStyles";
+import { flexMixin } from "./GlobalStyles";
 
 export const Nav = styled.nav`
   padding: 70px 20px;
@@ -13,11 +13,6 @@ export const Nav = styled.nav`
       font-size: 2rem;
       text-transform: uppercase;
       cursor: pointer;
-      transition: all 200ms ease;
-
-      &:hover {
-        color: ${secondaryColor};
-      }
     }
   }
 `;

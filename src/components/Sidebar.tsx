@@ -25,10 +25,10 @@ const Sidebar = () => {
           <a onClick={() => setShowDropdown(!showDropdown)}>Odbori</a>
           <ul>
             <li>
-              <a>Item 1</a>
+              <a>Programski</a>
             </li>
             <li>
-              <a>Item 2</a>
+              <a>Organizacioni</a>
             </li>
           </ul>
         </li>
