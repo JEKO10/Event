@@ -1,15 +1,31 @@
-import { useState } from "react";
 import { Side } from "../assets/style/Sidebar.style";
 import Menu from "../assets/images/menu.png";
+import sidebarPages from "../sidebarPages.json";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
-  const [showDropdown, setShowDropdown] = useState(false);
+  const showDropdown = false;
 
   return (
     <section>
       <img src={Menu} alt="Menu" />
       <Side showDropdown={showDropdown}>
-        <li>
+        {sidebarPages.map((listItem) => (
+          <li key={listItem.id}>
+            <Link to={`stranica/${listItem.path}`}>{listItem.title}</Link>
+          </li>
+        ))}
+      </Side>
+    </section>
+  );
+};
+
+export default Sidebar;
+
+// const [showDropdown, setShowDropdown] = useState(false);
+
+{
+  /* <li>
           <a>O Beranama</a>
         </li>
         <li>
@@ -52,10 +68,5 @@ const Sidebar = () => {
         </li>
         <li>
           <a>Foto galerija</a>
-        </li>
-      </Side>
-    </section>
-  );
-};
-
-export default Sidebar;
+        </li> */
+}

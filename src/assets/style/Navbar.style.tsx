@@ -23,7 +23,7 @@ export const Nav = styled.nav`
   div {
     p {
       color: ${secondaryColor};
-      font-size: 1.5rem;
+      font-size: 24px;
       text-align: center;
       animation: ${changeColor} 500ms linear infinite alternate;
     }
@@ -35,9 +35,9 @@ export const Nav = styled.nav`
     list-style-type: none;
 
     li {
-      font-size: 1.8rem;
+      font-size: 28.8px;
       text-transform: uppercase;
-      margin: 0 2rem;
+      margin: 0 32px;
       cursor: pointer;
       transition: all 200ms ease;
 

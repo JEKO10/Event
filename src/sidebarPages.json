@@ -1,0 +1,62 @@
+[
+  {
+    "id": 0,
+    "title": "O Beranama",
+    "path": "o-beranama"
+  },
+  {
+    "id": 1,
+    "title": "Program konferencije",
+    "path": "program-konferencije"
+  },
+  {
+    "id": 2,
+    "title": "Teme konferencije",
+    "path": "teme-konferencije"
+  },
+  {
+    "id": 3,
+    "title": "Cilj konferencije",
+    "path": "cilj-konferencije"
+  },
+  {
+    "id": 4,
+    "title": "Odbori",
+    "path": "odbori"
+  },
+  {
+    "id": 5,
+    "title": "Prijava radova",
+    "path": "prijava-radova"
+  },
+  {
+    "id": 6,
+    "title": "Uputstvo za pisanje radova",
+    "path": "uputstvo-za-pisanje-radova"
+  },
+  {
+    "id": 7,
+    "title": "Informacije za autore",
+    "path": "informacije-za-autore"
+  },
+  {
+    "id": 8,
+    "title": "Zbornik radova",
+    "path": "zbornik-radova"
+  },
+  {
+    "id": 9,
+    "title": "Raspored sesija",
+    "path": "raspored-sesija"
+  },
+  {
+    "id": 10,
+    "title": "Sponzori",
+    "path": "sponzori"
+  },
+  {
+    "id": 11,
+    "title": "Foto galerija",
+    "path": "foto-galerija"
+  }
+]

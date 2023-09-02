@@ -8,20 +8,20 @@ export const NewsInfo = styled.div`
   width: 100%;
   ${flexMixin({ justify: "center", align: "flex-start" })};
   flex-direction: column;
-  padding: 0.5rem 1rem;
+  padding: 8px 16px;
   background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.85));
   color: #fff;
   transition: all 0.3s ease;
 
   h2 {
-    margin-bottom: 0.5rem;
-    font-size: 1.5rem;
+    margin-bottom: 8px;
+    font-size: 24px;
     font-weight: 500;
   }
 
   p {
-    font-size: 1rem;
-    margin-bottom: 1rem;
+    font-size: 16px;
+    margin-bottom: 16px;
   }
 `;
 
@@ -36,7 +36,7 @@ export const NewsSection = styled.section`
   justify-items: center; /* Center items horizontally */
   align-items: center; /* Center items vertically */
   max-width: 45vw;
-  margin: 5rem auto;
+  margin: 80px auto;
 
   > a {
     ${flexMixin({ justify: "center", align: "center" })};

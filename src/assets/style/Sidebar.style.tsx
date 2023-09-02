@@ -7,7 +7,7 @@ type SidebarProps = {
 
 export const Main = styled.main`
   ${flexMixin({ justify: "space-between", align: "flex-start" })};
-  margin: 4rem 0;
+  margin: 64px 0;
   padding: 0 50px;
 
   > section {
@@ -15,16 +15,12 @@ export const Main = styled.main`
       height: 1500px;
     }
 
-    > img {
-      margin-bottom: 2rem;
-    }
-
     > div {
       ${flexMixin({ justify: "flex-end", align: "center" })};
       width: 100%;
 
       > img {
-        margin-bottom: 2rem;
+        margin-bottom: 32px;
       }
     }
   }
@@ -33,11 +29,11 @@ export const Main = styled.main`
     padding: 0 50px;
 
     h1 {
-      font-size: 3.5rem;
+      font-size: 56px;
       font-weight: 700;
       text-transform: uppercase;
       text-align: center;
-      margin-bottom: 2rem;
+      margin-bottom: 32px;
 
       span {
         color: ${secondaryColor};
@@ -47,7 +43,7 @@ export const Main = styled.main`
 
     p {
       max-width: 45vw;
-      font-size: 1.3rem;
+      font-size: 20.8px;
     }
   }
 `;
@@ -55,25 +51,20 @@ export const Main = styled.main`
 export const Side = styled.ul<SidebarProps>`
   background-color: ${primaryColor};
   position: sticky;
-  top: 1rem;
-  left: 4rem;
+  top: 16px;
+  left: 64px;
   width: 350px;
   list-style-type: none;
+  margin-top: 1rem;
   border-radius: 0 15px 15px 0;
   /* border: 1px solid #000; */
   /* height: 550px; */
 
   li {
-    font-size: 1.2rem;
-    color: #fff;
+    font-size: 19.2px;
     text-transform: uppercase;
     border-bottom: 1px solid #fff;
     cursor: pointer;
-    transition: all 200ms ease;
-
-    &:hover {
-      color: ${secondaryColor};
-    }
 
     &:last-of-type {
       border-bottom: none;
@@ -81,7 +72,14 @@ export const Side = styled.ul<SidebarProps>`
 
     a {
       display: block;
+      color: #fff;
+      text-decoration: none;
       padding: 10px 25px;
+      transition: all 200ms ease;
+
+      &:hover {
+        color: ${secondaryColor};
+      }
     }
 
     ul {

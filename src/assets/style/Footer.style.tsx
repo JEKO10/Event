@@ -9,8 +9,7 @@ export const FooterContainer = styled.footer`
   color: ${primaryColor};
 
   p {
-    opacity: 1;
-    font-size: 1.2rem;
+    font-size: 19.2px;
     font-weight: 500;
   }
 `;

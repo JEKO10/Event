@@ -6,15 +6,15 @@ export const SurveyContainer = styled.section`
   color: #fff;
   width: 350px;
   padding: 20px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 24px;
   list-style-type: none;
   border-radius: 15px 0 0 15px;
   /* border: 1px solid #000; */
 
   h2 {
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 500;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
     text-align: center;
 
     span {
@@ -26,7 +26,7 @@ export const SurveyContainer = styled.section`
     text-align: center;
 
     label {
-      font-size: 1.5rem;
+      font-size: 24px;
       text-transform: uppercase;
     }
 
@@ -38,18 +38,18 @@ export const SurveyContainer = styled.section`
       width: 20px;
       height: 20px;
       background-color: #fff;
-      margin: 1rem 1rem 1rem 0.5rem;
+      margin: 16px 16px 16px 8px;
 
       &[type="button"] {
         background-color: ${secondaryColor};
         color: ${primaryColor};
         height: auto;
         width: 100%;
-        font-size: 1.5rem;
+        font-size: 24px;
         font-family: "Outfit", sans-serif;
         text-transform: uppercase;
         font-weight: 600;
-        margin-top: 1rem;
+        margin-top: 16px;
         padding: 10px;
         border-radius: 5px;
         cursor: pointer;
@@ -57,7 +57,7 @@ export const SurveyContainer = styled.section`
     }
 
     > div {
-      margin-bottom: 1rem;
+      margin-bottom: 16px;
       ${flexMixin({ justify: "center", align: "center" })};
       flex-direction: column;
 
@@ -66,8 +66,8 @@ export const SurveyContainer = styled.section`
         width: 100%;
 
         p {
-          font-size: 1.3rem;
-          margin: 0 0.5rem;
+          font-size: 20.8px;
+          margin: 0 8px;
         }
       }
     }

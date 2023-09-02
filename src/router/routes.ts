@@ -1,5 +1,5 @@
 import Home from "../pages/Home";
-// import SinglePage from "../pages/SinglePage";
+import SinglePage from "../pages/SinglePage";
 
 const routes = [
   {
@@ -7,11 +7,11 @@ const routes = [
     path: "/",
     element: Home,
   },
-  //   {
-  //     id: 1,
-  //     path: "/:path",
-  //     element: SinglePage,
-  //   },
+  {
+    id: 1,
+    path: "stranica/:path",
+    element: SinglePage,
+  },
   //   {
   //     id: 12,
   //     path: "/*",
