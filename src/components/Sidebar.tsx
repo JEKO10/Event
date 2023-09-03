@@ -1,10 +1,12 @@
 import { Side } from "../assets/style/Sidebar.style";
 import Menu from "../assets/images/menu.png";
 import sidebarPages from "../sidebarPages.json";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const Sidebar = () => {
   const showDropdown = false;
+
+  const params = useParams();
 
   return (
     <section>
@@ -12,7 +14,15 @@ const Sidebar = () => {
       <Side showDropdown={showDropdown}>
         {sidebarPages.map((listItem) => (
           <li key={listItem.id}>
-            <Link to={`stranica/${listItem.path}`}>{listItem.title}</Link>
+            <Link
+              to={
+                params.url?.includes("stranica")
+                  ? listItem.path
+                  : `/stranica/${listItem.path}`
+              }
+            >
+              {listItem.title}
+            </Link>
           </li>
         ))}
       </Side>
@@ -22,6 +32,7 @@ const Sidebar = () => {
 
 export default Sidebar;
 
+// to={`stranica/${listItem.path}`}
 // const [showDropdown, setShowDropdown] = useState(false);
 
 {
