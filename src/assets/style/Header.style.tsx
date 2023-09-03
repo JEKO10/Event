@@ -69,7 +69,7 @@ export const Hero = styled.section`
     }
   }
 
-  @media ${devices.mobile} {
+  @media ${devices.mobileS} {
     height: 150px;
     width: 240px;
 
@@ -83,4 +83,16 @@ export const Stroke = styled.img`
   height: 68px;
   width: 100%;
   margin-top: -32px;
+
+  @media ${devices.laptopS} {
+    width: 150%;
+  }
+
+  @media ${devices.tablet} {
+    width: 200%;
+  }
+
+  @media ${devices.mobile} {
+    width: 250%;
+  }
 `;

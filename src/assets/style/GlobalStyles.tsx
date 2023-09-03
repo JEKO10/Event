@@ -41,10 +41,15 @@ export const GlobalStyles = React.memo(
       font-family: "Outfit", sans-serif;
       overflow-x: hidden;
     }
+
+    main {
+      overflow-x: hidden;
+    }
   `}`
 );
 
 const sizes = {
+  mobileS: "375px",
   mobile: "480px",
   tablet: "768px",
   laptopS: "992px",
@@ -56,6 +61,7 @@ const sizes = {
 };
 
 export const devices = {
+  mobileS: `(max-width: ${sizes.mobileS})`,
   mobile: `(max-width: ${sizes.mobile})`,
   tablet: `(max-width: ${sizes.tablet})`,
   laptopS: `(max-width: ${sizes.laptopS})`,

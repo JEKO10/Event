@@ -1,5 +1,10 @@
 import { css, styled } from "styled-components";
-import { flexMixin, primaryColor, secondaryColor } from "./GlobalStyles";
+import {
+  devices,
+  flexMixin,
+  primaryColor,
+  secondaryColor,
+} from "./GlobalStyles";
 
 type SidebarProps = {
   showDropdown: boolean;
@@ -10,9 +15,17 @@ export const Main = styled.main`
   margin: 64px 0;
   padding: 0 50px;
 
+  @media ${devices.desktop} {
+    padding: 0 30px;
+  }
+
   > section {
     &:first-of-type {
       height: 1500px;
+
+      @media ${devices.laptopS} {
+        display: none;
+      }
     }
 
     > div {
@@ -20,7 +33,11 @@ export const Main = styled.main`
       width: 100%;
 
       > img {
-        margin-bottom: 32px;
+        margin-bottom: 1rem;
+
+        @media ${devices.laptopL} {
+          display: none;
+        }
       }
     }
   }
@@ -28,12 +45,42 @@ export const Main = styled.main`
   > article {
     padding: 0 50px;
 
+    @media ${devices.desktopS} {
+      padding: 0 40px;
+    }
+
+    @media ${devices.laptopL} {
+      padding: 0;
+      padding-left: 40px;
+    }
+
+    @media ${devices.laptopS} {
+      padding: 0;
+    }
+
     h1 {
       font-size: 56px;
       font-weight: 700;
       text-transform: uppercase;
       text-align: center;
       margin-bottom: 32px;
+
+      @media ${devices.desktopL} {
+        font-size: 45px;
+      }
+
+      @media ${devices.laptopL} {
+        font-size: 56px;
+        text-align: right;
+      }
+
+      @media ${devices.laptopS} {
+        text-align: center;
+      }
+
+      @media ${devices.tablet} {
+        font-size: 35px;
+      }
 
       span {
         color: ${secondaryColor};
@@ -44,6 +91,17 @@ export const Main = styled.main`
     p {
       max-width: 45vw;
       font-size: 20.8px;
+
+      @media ${devices.laptopL} {
+        max-width: 65vw;
+        text-align: right;
+      }
+
+      @media ${devices.laptopS} {
+        font-size: 19px;
+        max-width: 100%;
+        text-align: center;
+      }
     }
   }
 `;
@@ -60,6 +118,18 @@ export const Side = styled.ul<SidebarProps>`
   /* border: 1px solid #000; */
   /* height: 550px; */
 
+  @media ${devices.desktopL} {
+    width: 316px;
+  }
+
+  @media ${devices.desktopS} {
+    width: 284px;
+  }
+
+  @media ${devices.laptopS} {
+    display: none;
+  }
+
   li {
     font-size: 19.2px;
     text-transform: uppercase;
@@ -68,6 +138,10 @@ export const Side = styled.ul<SidebarProps>`
 
     &:last-of-type {
       border-bottom: none;
+    }
+
+    @media ${devices.desktopS} {
+      font-size: 17px;
     }
 
     a {
@@ -79,6 +153,10 @@ export const Side = styled.ul<SidebarProps>`
 
       &:hover {
         color: ${secondaryColor};
+      }
+
+      @media ${devices.desktopL} {
+        padding: 10px 15px;
       }
     }
 

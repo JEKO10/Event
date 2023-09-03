@@ -9,9 +9,9 @@ const Home = () => {
   return (
     <main>
       <Header />
-      {/* <Stroke src={StrokeImg} alt="StrokeImg" />
+      <Stroke src={StrokeImg} alt="StrokeImg" />
       <MainContainer />
-      <News />
+      {/* <News />
       <Socials /> */}
     </main>
   );

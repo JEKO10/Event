@@ -1,5 +1,10 @@
 import { styled } from "styled-components";
-import { flexMixin, primaryColor, secondaryColor } from "./GlobalStyles";
+import {
+  devices,
+  flexMixin,
+  primaryColor,
+  secondaryColor,
+} from "./GlobalStyles";
 
 export const SurveyContainer = styled.section`
   background-color: ${primaryColor};
@@ -11,6 +16,18 @@ export const SurveyContainer = styled.section`
   border-radius: 15px 0 0 15px;
   /* border: 1px solid #000; */
 
+  @media ${devices.desktop} {
+    width: 300px;
+  }
+
+  @media ${devices.desktopS} {
+    width: 275px;
+  }
+
+  @media ${devices.laptopL} {
+    display: none;
+  }
+
   h2 {
     font-size: 32px;
     font-weight: 500;
@@ -20,6 +37,10 @@ export const SurveyContainer = styled.section`
     span {
       color: ${secondaryColor};
     }
+
+    @media ${devices.desktop} {
+      font-size: 30px;
+    }
   }
 
   article {
@@ -28,6 +49,10 @@ export const SurveyContainer = styled.section`
     label {
       font-size: 24px;
       text-transform: uppercase;
+
+      @media ${devices.desktop} {
+        font-size: 20px;
+      }
     }
 
     svg {
@@ -49,10 +74,19 @@ export const SurveyContainer = styled.section`
         font-family: "Outfit", sans-serif;
         text-transform: uppercase;
         font-weight: 600;
+        margin: 16px 0 0;
         margin-top: 16px;
         padding: 10px;
         border-radius: 5px;
         cursor: pointer;
+
+        @media ${devices.desktop} {
+          width: 80%;
+        }
+
+        @media ${devices.desktopS} {
+          width: 60%;
+        }
       }
     }
 
@@ -69,37 +103,15 @@ export const SurveyContainer = styled.section`
           font-size: 20.8px;
           margin: 0 8px;
         }
+
+        @media ${devices.desktopS} {
+          flex-direction: column;
+
+          p:first-of-type {
+            margin-bottom: 5px;
+          }
+        }
       }
     }
   }
-
-  /* button {
-    width: 100%;
-    background-color: #0b27f1;
-    color: #fff;
-    font-size: 1.2rem;
-    padding: 10px;
-    margin-top: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-  } */
 `;
-
-//  article {
-//     ${flexMixin({ justify: "space-between", align: "center" })};
-//     flex-direction: column;
-
-//     div {
-//       ${flexMixin({ justify: "center", align: "center" })};
-//       margin: 1rem 0;
-
-//       input {
-//         margin-top: 0.5rem;
-//       }
-
-//       p {
-//         text-align: center;
-//         margin-top: 0.5rem;
-//       }
-//     }
-//   }

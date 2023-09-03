@@ -45,7 +45,7 @@ export const Nav = styled.nav`
       height: 50px;
     }
 
-    @media ${devices.mobile} {
+    @media ${devices.mobileS} {
       height: 40px;
     }
   }
@@ -69,6 +69,10 @@ export const Nav = styled.nav`
     }
 
     @media ${devices.mobile} {
+      font-size: 15px;
+    }
+
+    @media ${devices.mobileS} {
       font-size: 12px;
     }
   }
