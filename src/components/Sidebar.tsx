@@ -5,7 +5,6 @@ import { Link, useParams } from "react-router-dom";
 
 const Sidebar = () => {
   const showDropdown = false;
-
   const params = useParams();
 
   return (
@@ -15,10 +14,15 @@ const Sidebar = () => {
         {sidebarPages.map((listItem) => (
           <li key={listItem.id}>
             <Link
+              // to={`/${params.url || "radovi"}/${listItem.path}`}
               to={
-                params.url?.includes("stranica")
+                listItem.route === "info"
+                  ? params.url?.includes("info")
+                    ? listItem.path
+                    : `/info/${listItem.path}`
+                  : params.url?.includes("radovi")
                   ? listItem.path
-                  : `/stranica/${listItem.path}`
+                  : `/radovi/${listItem.path}`
               }
             >
               {listItem.title}

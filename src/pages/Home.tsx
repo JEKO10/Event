@@ -5,16 +5,14 @@ import News from "../components/News";
 import StrokeImg from "../assets/images/stroke.png";
 import Socials from "../components/Socials";
 
-//  LOG SCROLL TO TOP I SOCIALS POJEDINACNO SJUTRA PRVO TO
-
 const Home = () => {
   return (
     <main>
       <Header />
-      <Stroke src={StrokeImg} alt="StrokeImg" />
+      {/* <Stroke src={StrokeImg} alt="StrokeImg" />
       <MainContainer />
       <News />
-      <Socials />
+      <Socials /> */}
     </main>
   );
 };

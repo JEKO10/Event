@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { flexMixin } from "./GlobalStyles";
+import { devices, flexMixin } from "./GlobalStyles";
 
 export const HeaderContainer = styled.section`
   min-height: 90vh;
@@ -11,12 +11,21 @@ export const HeaderContainer = styled.section`
       rgba(0, 69, 116, 0) 75%,
       rgba(0, 69, 116, 0.6) 100%
     ),
-    url(src/assets/images/panorama.jpg) center/cover no-repeat;
-  /* fixed */
+    url(/src/assets/images/panorama.jpg) center/cover no-repeat;
+  /* fixe0d */
 
   > section {
     ${flexMixin({ justify: "center", align: "center" })};
     margin-top: 32px;
+    padding-bottom: 50px;
+
+    @media ${devices.laptopS} {
+      margin-top: 50px;
+    }
+
+    @media ${devices.tablet} {
+      margin-top: 70px;
+    }
   }
 `;
 
@@ -30,6 +39,44 @@ export const Hero = styled.section`
   // 4 i 5 se bolje vidi
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   /* padding: 40px 80px; */
+
+  @media ${devices.laptop} {
+    height: 300px;
+    width: 580px;
+
+    img {
+      height: 250px;
+      width: 550px;
+    }
+  }
+
+  @media ${devices.laptopS} {
+    height: 250px;
+    width: 450px;
+
+    img {
+      height: auto;
+      width: 450px;
+    }
+  }
+
+  @media ${devices.tablet} {
+    height: 200px;
+    width: 350px;
+
+    img {
+      width: 350px;
+    }
+  }
+
+  @media ${devices.mobile} {
+    height: 150px;
+    width: 240px;
+
+    img {
+      width: 250px;
+    }
+  }
 `;
 
 export const Stroke = styled.img`

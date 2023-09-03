@@ -16,7 +16,7 @@ function RouterProvider() {
         </Routes>
       </>
       {/* <Socials /> */}
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   );
 }

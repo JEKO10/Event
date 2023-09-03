@@ -19,7 +19,7 @@ const SingleNew: React.FC<SingleNewProps> = ({
   date,
 }) => {
   return (
-    <Link to={path}>
+    <Link to={`vijesti/${path}`}>
       <img src={banner} alt="img" />
       <NewsInfo>
         <h4>{date}</h4>

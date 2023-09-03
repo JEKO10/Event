@@ -2,61 +2,73 @@
   {
     "id": 0,
     "title": "O Beranama",
-    "path": "o-beranama"
+    "path": "o-beranama",
+    "route": "info"
   },
   {
     "id": 1,
     "title": "Program konferencije",
-    "path": "program-konferencije"
+    "path": "program-konferencije",
+    "route": "info"
   },
   {
     "id": 2,
     "title": "Teme konferencije",
-    "path": "teme-konferencije"
+    "path": "teme-konferencije",
+    "route": "info"
   },
   {
     "id": 3,
     "title": "Cilj konferencije",
-    "path": "cilj-konferencije"
+    "path": "cilj-konferencije",
+    "route": "info"
   },
   {
     "id": 4,
     "title": "Odbori",
-    "path": "odbori"
+    "path": "odbori",
+    "route": "info"
   },
   {
     "id": 5,
     "title": "Prijava radova",
-    "path": "prijava-radova"
+    "path": "prijava-radova",
+    "route": "radovi"
   },
   {
     "id": 6,
     "title": "Uputstvo za pisanje radova",
-    "path": "uputstvo-za-pisanje-radova"
+    "path": "uputstvo-za-pisanje-radova",
+    "route": "radovi"
   },
   {
     "id": 7,
-    "title": "Informacije za autore",
-    "path": "informacije-za-autore"
+    "title": "macije za autore",
+    "path": "macije-za-autore",
+    "route": "radovi"
   },
   {
     "id": 8,
     "title": "Zbornik radova",
-    "path": "zbornik-radova"
+    "path": "zbornik-radova",
+    "route": "radovi"
   },
   {
     "id": 9,
     "title": "Raspored sesija",
-    "path": "raspored-sesija"
+    "path": "raspored-sesija",
+    "route": "info"
   },
   {
     "id": 10,
     "title": "Sponzori",
-    "path": "sponzori"
+    "path": "sponzori",
+    "route": "info"
   },
   {
     "id": 11,
     "title": "Foto galerija",
-    "path": "foto-galerija"
+    "path": "foto-galerija",
+    "route": "radovi"
   }
 ]

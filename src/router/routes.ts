@@ -1,5 +1,7 @@
 import Home from "../pages/Home";
+import SingleNew from "../pages/SingleNew";
 import SinglePage from "../pages/SinglePage";
+import SingleWork from "../pages/SingleWork";
 
 const routes = [
   {
@@ -9,8 +11,18 @@ const routes = [
   },
   {
     id: 1,
-    path: "stranica/:path",
+    path: "info/:path",
     element: SinglePage,
+  },
+  {
+    id: 2,
+    path: "radovi/:path",
+    element: SingleWork,
+  },
+  {
+    id: 3,
+    path: "vijesti/:path",
+    element: SingleNew,
   },
   //   {
   //     id: 12,
