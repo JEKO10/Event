@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import routes from "./routes";
 import Footer from "../components/Footer";
 import ScrollToTop from "./ScrollTop";
-// import Socials from "../components/Socials";
+import Socials from "../components/Socials";
 
 function RouterProvider() {
   return (
@@ -15,8 +15,8 @@ function RouterProvider() {
           ))}
         </Routes>
       </>
-      {/* <Socials /> */}
-      {/* <Footer /> */}
+      <Socials />
+      <Footer />
     </Router>
   );
 }
