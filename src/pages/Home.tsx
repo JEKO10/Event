@@ -11,8 +11,8 @@ const Home = () => {
       <Header />
       <Stroke src={StrokeImg} alt="StrokeImg" />
       <MainContainer />
-      {/* <News />
-      <Socials /> */}
+      <News />
+      {/* <Socials /> */}
     </main>
   );
 };

@@ -2,7 +2,8 @@ import styled from "styled-components";
 import { devices, flexMixin } from "./GlobalStyles";
 
 export const HeaderContainer = styled.section`
-  min-height: 90vh;
+  min-height: 850px;
+  /* min-height: 90vh; */
   /* min-height: 95vh; */
   background: linear-gradient(
       to right,
@@ -12,7 +13,11 @@ export const HeaderContainer = styled.section`
       rgba(0, 69, 116, 0.6) 100%
     ),
     url(/src/assets/images/panorama.jpg) center/cover no-repeat;
-  /* fixe0d */
+  /* fixed */
+
+  @media ${devices.laptopS} {
+    min-height: 90vh;
+  }
 
   > section {
     ${flexMixin({ justify: "center", align: "center" })};

@@ -82,6 +82,10 @@ export const Main = styled.main`
         font-size: 35px;
       }
 
+      @media ${devices.mobileS} {
+        font-size: 28px;
+      }
+
       span {
         color: ${secondaryColor};
         /* text-transform: initial; */
@@ -101,6 +105,10 @@ export const Main = styled.main`
         font-size: 19px;
         max-width: 100%;
         text-align: center;
+      }
+
+      @media ${devices.mobile} {
+        font-size: 18px;
       }
     }
   }

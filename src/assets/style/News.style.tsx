@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { flexMixin } from "./GlobalStyles";
+import { devices, flexMixin } from "./GlobalStyles";
 
 export const NewsInfo = styled.div`
   position: absolute;
@@ -17,11 +17,23 @@ export const NewsInfo = styled.div`
     margin-bottom: 8px;
     font-size: 24px;
     font-weight: 500;
+
+    @media ${devices.tablet} {
+      font-size: 20px;
+    }
+
+    @media ${devices.mobile} {
+      font-size: 30px;
+    }
   }
 
   p {
     font-size: 16px;
     margin-bottom: 16px;
+
+    @media ${devices.mobile} {
+      font-size: 23px;
+    }
   }
 `;
 
@@ -38,6 +50,14 @@ export const NewsSection = styled.section`
   max-width: 45vw;
   margin: 80px auto;
 
+  @media ${devices.laptopS} {
+    max-width: 90vw;
+  }
+
+  @media ${devices.mobile} {
+    display: block;
+  }
+
   > a {
     ${flexMixin({ justify: "center", align: "center" })};
     height: 100%;
@@ -48,7 +68,7 @@ export const NewsSection = styled.section`
 
     &:first-of-type {
       ${flexMixin({ justify: "center", align: "center" })};
-      grid-row: 1 / span 2; /* The left image spans both rows */
+      grid-row: 1 / span 2;
     }
 
     &:hover img {
@@ -61,6 +81,13 @@ export const NewsSection = styled.section`
       display: block;
       object-fit: cover;
       transition: all 500ms ease;
+    }
+
+    @media ${devices.mobile} {
+      &:last-of-type,
+      &:nth-child(2) {
+        display: none;
+      }
     }
   }
 `;
