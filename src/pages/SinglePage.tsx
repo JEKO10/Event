@@ -12,7 +12,7 @@ const SinglePage = () => {
   return (
     <>
       <SinglePageNav />
-      {/* <Header>
+      <Header>
         <Sidebar />
         <article>
           <h2>
@@ -48,7 +48,7 @@ const SinglePage = () => {
           </p>
         </article>
       </Header>
-      <Main>
+      {/* <Main>
         <p>
           "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae

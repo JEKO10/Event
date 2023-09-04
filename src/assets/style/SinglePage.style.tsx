@@ -129,8 +129,39 @@ export const Header = styled.section`
   margin: 80px 0;
   padding: 0 65px;
 
+  @media ${devices.laptopL} {
+    padding: 0 30px;
+  }
+
+  @media ${devices.laptopS} {
+    margin: 60px 0;
+  }
+
+  @media ${devices.mobile} {
+    padding: 0 20px;
+  }
+
+  img {
+    @media ${devices.laptopS} {
+      display: none;
+    }
+  }
+
   article {
+    padding-left: 40px;
     text-align: right;
+
+    @media ${devices.laptopS} {
+      text-align: center;
+    }
+
+    @media ${devices.laptopS} {
+      padding: 0 20px;
+    }
+
+    @media ${devices.tablet} {
+      padding: 0;
+    }
 
     h2 {
       font-size: 40px;
@@ -139,6 +170,18 @@ export const Header = styled.section`
       span {
         color: ${secondaryColor};
       }
+
+      @media ${devices.laptopS} {
+        font-size: 60px;
+      }
+
+      @media ${devices.mobile} {
+        font-size: 50px;
+      }
+
+      @media ${devices.mobileS} {
+        font-size: 45px;
+      }
     }
 
     p {
@@ -146,6 +189,16 @@ export const Header = styled.section`
       font-size: 25px;
       font-weight: 600;
       line-height: 35px;
+
+      @media ${devices.tablet} {
+        max-width: 100%;
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      @media ${devices.mobileS} {
+        font-size: 18.5px;
+      }
     }
   }
 `;
