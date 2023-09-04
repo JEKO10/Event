@@ -12,7 +12,7 @@ const Home = () => {
       <Stroke src={StrokeImg} alt="StrokeImg" />
       <MainContainer />
       <News />
-      {/* <Socials /> */}
+      <Socials />
     </main>
   );
 };
