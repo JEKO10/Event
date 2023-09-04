@@ -12,7 +12,7 @@ const SinglePage = () => {
   return (
     <>
       <SinglePageNav />
-      <Header>
+      {/* <Header>
         <Sidebar />
         <article>
           <h2>
@@ -76,7 +76,7 @@ const SinglePage = () => {
           dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
           quia non numquam eius modi tempora incidunt ut labore et dolore.
         </p>
-      </Image>
+      </Image> */}
     </>
   );
 };

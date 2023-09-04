@@ -91,10 +91,15 @@ export const Nav = styled.nav`
       text-transform: uppercase;
       margin: 0 32px;
       cursor: pointer;
-      transition: all 200ms ease;
 
-      &:hover {
-        color: ${secondaryColor};
+      a {
+        color: #fff;
+        text-decoration: none;
+        transition: all 200ms ease;
+
+        &:hover {
+          color: ${secondaryColor};
+        }
       }
 
       @media ${devices.desktop} {

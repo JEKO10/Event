@@ -1,6 +1,7 @@
 import { Nav } from "../assets/style/Navbar.style";
 import Logo from "../assets/images/logo.png";
 import { VscMenu } from "react-icons/vsc";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -9,13 +10,13 @@ const Navbar = () => {
       <img src={Logo} alt="Logo" />
       <ul>
         <li>
-          <a>Program konferencije</a>
+          <Link to="/info/program-konferencije">Program konferencije</Link>
         </li>
         <li>
-          <a>Teme konferencije</a>
+          <Link to="/info/teme-konferencije">Teme konferencije</Link>
         </li>
         <li>
-          <a>Cilj konferencije</a>
+          <Link to="/info/cilj-konferencije">Cilj konferencije</Link>
         </li>
       </ul>
       <div>
