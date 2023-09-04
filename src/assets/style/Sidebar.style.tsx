@@ -12,6 +12,7 @@ type SidebarProps = {
 
 export const Main = styled.main`
   ${flexMixin({ justify: "space-between", align: "flex-start" })};
+  position: relative;
   margin: 64px 0;
   padding: 0 50px;
 

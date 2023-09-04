@@ -25,6 +25,18 @@ export const SurveyContainer = styled.section`
   }
 
   @media ${devices.laptopL} {
+    position: absolute;
+    top: 37%;
+    left: 30px;
+    width: 284px;
+    border-radius: 0 15px 15px 0;
+  }
+
+  @media ${devices.laptop} {
+    top: 30%;
+  }
+
+  @media ${devices.laptopS} {
     display: none;
   }
 
