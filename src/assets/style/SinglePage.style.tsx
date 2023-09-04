@@ -164,7 +164,7 @@ export const Header = styled.section`
     }
 
     h2 {
-      font-size: 40px;
+      font-size: 70px;
       margin-bottom: 16px;
 
       span {

@@ -1,5 +1,5 @@
-// import { useParams } from "react-router-dom";
-// import newsData from "../news.json";
+import { useParams } from "react-router-dom";
+import pages from "../sidebarPages.json";
 import { Header, Image, Main } from "../assets/style/SinglePage.style";
 import Sidebar from "../components/Sidebar";
 import Berane from "../assets/images/berane.jpg";
@@ -7,7 +7,21 @@ import Centar from "../assets/images/centar.jpg";
 import SinglePageNav from "../components/SinglePageNav";
 
 const SinglePage = () => {
-  // const { path } = useParams();
+  const { path } = useParams();
+
+  const selectedPage = pages.find((page) => page.path === path);
+
+  if (!selectedPage) {
+    return <p>Nepostojeća stranica!</p>;
+  }
+
+  const titleWords = selectedPage.title.split(" ");
+
+  if (titleWords.length >= 2) {
+    titleWords[1] = `<span>${titleWords[1]}</span>`;
+  }
+
+  const titleWithSpan = titleWords.join(" ");
 
   return (
     <>
@@ -15,9 +29,7 @@ const SinglePage = () => {
       <Header>
         <Sidebar />
         <article>
-          <h2>
-            O <span>Beranama</span>
-          </h2>
+          <h2 dangerouslySetInnerHTML={{ __html: titleWithSpan }} />
           <p>
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
