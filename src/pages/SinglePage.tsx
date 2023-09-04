@@ -48,7 +48,7 @@ const SinglePage = () => {
           </p>
         </article>
       </Header>
-      {/* <Main>
+      <Main>
         <p>
           "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
@@ -76,7 +76,7 @@ const SinglePage = () => {
           dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
           quia non numquam eius modi tempora incidunt ut labore et dolore.
         </p>
-      </Image> */}
+      </Image>
     </>
   );
 };
