@@ -23,6 +23,8 @@ export const Nav = styled.nav`
     font-size: 2rem;
     color: ${secondaryColor};
     display: none;
+    cursor: pointer;
+    z-index: 2;
 
     @media ${devices.laptopS} {
       display: block;
@@ -113,6 +115,63 @@ export const Nav = styled.nav`
       @media ${devices.laptopL} {
         margin: 0 16px;
       }
+    }
+  }
+`;
+
+export const FixedMenu = styled.article`
+  ${flexMixin({ justify: "flex-start", align: "flex-start" })};
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.9;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: none;
+
+  @media ${devices.laptopS} {
+    display: flex;
+  }
+
+  ul {
+    ${flexMixin({ justify: "flex-start", align: "flex-start" })};
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 8rem;
+
+    @media ${devices.tablet} {
+      margin-top: 5rem;
+    }
+
+    &:last-of-type {
+      @media ${devices.tablet} {
+        margin-top: 2rem;
+      }
+
+      @media ${devices.mobile} {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 1.3rem;
+    text-align: left;
+    margin: 1rem;
+    border-radius: 5px;
+
+    @media ${devices.tablet} {
+      font-size: 1.1rem;
+      margin: 1rem 0.5rem;
+    }
+
+    @media ${devices.mobile} {
+      font-size: 0.8rem;
     }
   }
 `;

@@ -8,7 +8,7 @@ const Header = () => {
       <Navbar />
       <section>
         <Hero>
-          <img src={HeroImg} alt="HeroImg" />
+          <img src={HeroImg} alt="IZPera Berane Naučna konferencija berane" />
         </Hero>
       </section>
     </HeaderContainer>
