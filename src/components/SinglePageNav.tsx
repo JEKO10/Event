@@ -1,12 +1,109 @@
+import { useState } from "react";
 import Logo from "../assets/images/logo.png";
-import { Nav } from "../assets/style/SinglePage.style";
+import { Nav, SingleList } from "../assets/style/SinglePage.style";
 import { Link } from "react-router-dom";
 import { VscMenu } from "react-icons/vsc";
+import { FixedMenu } from "../assets/style/Navbar.style";
+import { RxCross1 } from "react-icons/rx";
 
 const SinglePageNav = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  if (isMenuOpen) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+
+  const handleClick = () => {
+    setIsMenuOpen(false);
+    document.body.style.overflow = "auto";
+  };
+
   return (
     <Nav>
-      <VscMenu />
+      {isMenuOpen && (
+        <FixedMenu>
+          <ul>
+            <li>
+              <Link to="/info/o-beranama" onClick={() => handleClick()}>
+                O Beranama
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/info/program-konferencije"
+                onClick={() => handleClick()}
+              >
+                Program konferencije
+              </Link>
+            </li>
+            <li>
+              <Link to="/info/teme-konferencije" onClick={() => handleClick()}>
+                Teme konferencije
+              </Link>
+            </li>
+            <li>
+              <Link to="/info/cilj-konferencije" onClick={() => handleClick()}>
+                Cilj konferencije
+              </Link>
+            </li>
+            <li>
+              <Link to="/info/odbori" onClick={() => handleClick()}>
+                Odbori
+              </Link>
+            </li>
+            <li>
+              <Link to="/radovi/prijava-radova" onClick={() => handleClick()}>
+                Prijava radova
+              </Link>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <Link
+                to="/radovi/uputstvo-za-pisanje-radova"
+                onClick={() => handleClick()}
+              >
+                Uputstvo za pisanje radova
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/radovi/infomacije-za-autore"
+                onClick={() => handleClick()}
+              >
+                Infomacije za autore
+              </Link>
+            </li>
+            <li>
+              <Link to="/radovi/zbornik-radova" onClick={() => handleClick()}>
+                Zbornik radova
+              </Link>
+            </li>
+            <li>
+              <Link to="/info/raspored-sesija" onClick={() => handleClick()}>
+                Raspored sesija
+              </Link>
+            </li>
+            <li>
+              <Link to="/info/sponzori" onClick={() => handleClick()}>
+                Sponzori
+              </Link>
+            </li>
+            <li>
+              <Link to="/radovi/foto-galerija" onClick={() => handleClick()}>
+                Foto galerija
+              </Link>
+            </li>
+          </ul>
+        </FixedMenu>
+      )}
+      {isMenuOpen ? (
+        <RxCross1 onClick={() => setIsMenuOpen(!isMenuOpen)} />
+      ) : (
+        <VscMenu onClick={() => setIsMenuOpen(!isMenuOpen)} />
+      )}
       <Link to="/">
         <img src={Logo} alt="Logo" />
       </Link>
@@ -15,7 +112,7 @@ const SinglePageNav = () => {
         <p>9.9.2023.</p>
         <p>10.9.2023.</p>
       </div>
-      <ul>
+      <SingleList>
         <li>
           <Link to="/info/program-konferencije">Program konferencije</Link>
         </li>
@@ -25,7 +122,7 @@ const SinglePageNav = () => {
         <li>
           <Link to="/info/cilj-konferencije">Cilj konferencije</Link>
         </li>
-      </ul>
+      </SingleList>
     </Nav>
   );
 };

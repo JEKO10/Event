@@ -90,7 +90,6 @@ export const Nav = styled.nav`
 
     li {
       font-size: 28.8px;
-      text-transform: uppercase;
       margin: 0 32px;
       cursor: pointer;
 
@@ -128,11 +127,11 @@ export const FixedMenu = styled.article`
   opacity: 0.9;
   height: 100%;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   display: none;
 
   @media ${devices.laptopS} {
-    display: flex;
+    display: flex !important;
   }
 
   ul {
@@ -156,22 +155,28 @@ export const FixedMenu = styled.article`
     }
   }
 
-  li a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    font-size: 1.3rem;
-    text-align: left;
-    margin: 1rem;
-    border-radius: 5px;
+  li {
+    margin: 0 16px;
 
-    @media ${devices.tablet} {
-      font-size: 1.1rem;
-      margin: 1rem 0.5rem;
-    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: block;
+      font-size: 1.3rem;
+      text-align: left;
+      margin: 1rem;
+      border-radius: 5px;
+      max-width: 110px;
 
-    @media ${devices.mobile} {
-      font-size: 0.8rem;
+      @media ${devices.tablet} {
+        font-size: 1.1rem;
+        margin: 1rem 0.5rem;
+      }
+
+      @media ${devices.mobile} {
+        font-size: 0.8rem;
+      }
     }
   }
 `;

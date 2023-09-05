@@ -23,6 +23,8 @@ export const Nav = styled.nav`
     font-size: 2rem;
     color: ${secondaryColor};
     display: none;
+    cursor: pointer;
+    z-index: 2;
 
     @media ${devices.laptopS} {
       display: block;
@@ -50,44 +52,6 @@ export const Nav = styled.nav`
 
     @media ${devices.mobileS} {
       height: 40px;
-    }
-  }
-
-  ul {
-    ${flexMixin({ justify: "space-between", align: "center" })};
-    list-style-type: none;
-
-    @media ${devices.laptopS} {
-      display: none;
-    }
-
-    li {
-      font-size: 28.8px;
-      text-transform: uppercase;
-      margin: 0 32px;
-      cursor: pointer;
-
-      a {
-        color: #fff;
-        text-decoration: none;
-        transition: all 200ms ease;
-
-        &:hover {
-          color: ${secondaryColor};
-        }
-      }
-
-      @media ${devices.desktopS} {
-        font-size: 25px;
-      }
-
-      @media ${devices.laptopL} {
-        font-size: 20px;
-      }
-
-      @media ${devices.laptop} {
-        font-size: 18px;
-      }
     }
   }
 
@@ -120,6 +84,44 @@ export const Nav = styled.nav`
 
     @media ${devices.mobileS} {
       font-size: 12px;
+    }
+  }
+`;
+
+export const SingleList = styled.ul`
+  ${flexMixin({ justify: "space-between", align: "center" })};
+  list-style-type: none;
+
+  @media ${devices.laptopS} {
+    display: none;
+  }
+
+  li {
+    font-size: 28.8px;
+    text-transform: uppercase;
+    margin: 0 32px;
+    cursor: pointer;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      transition: all 200ms ease;
+
+      &:hover {
+        color: ${secondaryColor};
+      }
+    }
+
+    @media ${devices.desktopS} {
+      font-size: 25px;
+    }
+
+    @media ${devices.laptopL} {
+      font-size: 20px;
+    }
+
+    @media ${devices.laptop} {
+      font-size: 18px;
     }
   }
 `;

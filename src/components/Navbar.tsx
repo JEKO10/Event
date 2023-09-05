@@ -14,48 +14,86 @@ const Navbar = () => {
     document.body.style.overflow = "auto";
   }
 
+  const handleClick = () => {
+    setIsMenuOpen(false);
+    document.body.style.overflow = "auto";
+  };
+
   return (
     <Nav>
       {isMenuOpen && (
         <FixedMenu>
           <ul>
             <li>
-              <a>O Beranama</a>
+              <Link to="/info/o-beranama" onClick={() => handleClick()}>
+                O Beranama
+              </Link>
             </li>
             <li>
-              <a>Program konferencije</a>
+              <Link
+                to="/info/program-konferencije"
+                onClick={() => handleClick()}
+              >
+                Program konferencije
+              </Link>
             </li>
             <li>
-              <a>Teme konferencije</a>
+              <Link to="/info/teme-konferencije" onClick={() => handleClick()}>
+                Teme konferencije
+              </Link>
             </li>
             <li>
-              <a>Cilj konferencije</a>
+              <Link to="/info/cilj-konferencije" onClick={() => handleClick()}>
+                Cilj konferencije
+              </Link>
             </li>
             <li>
-              <a>Odbori</a>
+              <Link to="/info/odbori" onClick={() => handleClick()}>
+                Odbori
+              </Link>
             </li>
             <li>
-              <a>Prijava radova</a>
+              <Link to="/radovi/prijava-radova" onClick={() => handleClick()}>
+                Prijava radova
+              </Link>
             </li>
           </ul>
           <ul>
             <li>
-              <a>Uputstvo za pisanje radova</a>
+              <Link
+                to="/radovi/uputstvo-za-pisanje-radova"
+                onClick={() => handleClick()}
+              >
+                Uputstvo za pisanje radova
+              </Link>
             </li>
             <li>
-              <a>Infomacije za autore</a>
+              <Link
+                to="/radovi/infomacije-za-autore"
+                onClick={() => handleClick()}
+              >
+                Infomacije za autore
+              </Link>
             </li>
             <li>
-              <a>Zbornik radova</a>
+              <Link to="/radovi/zbornik-radova" onClick={() => handleClick()}>
+                Zbornik radova
+              </Link>
             </li>
             <li>
-              <a>Raspored sesija</a>
+              <Link to="/info/raspored-sesija" onClick={() => handleClick()}>
+                Raspored sesija
+              </Link>
             </li>
             <li>
-              <a>Sponzori</a>
+              <Link to="/info/sponzori" onClick={() => handleClick()}>
+                Sponzori
+              </Link>
             </li>
             <li>
-              <a>Foto galerija</a>
+              <Link to="/radovi/foto-galerija" onClick={() => handleClick()}>
+                Foto galerija
+              </Link>
             </li>
           </ul>
         </FixedMenu>
