@@ -18,7 +18,7 @@ const SinglePage = () => {
   return (
     <>
       <SinglePageNav />
-      <SinglePageHeader selectedPage={selectedPage} />
+      <SinglePageHeader title={selectedPage.title} body={selectedPage.route} />
       <Main>
         <p>
           "Sed ut perspiciatis unde omnis iste natus error sit voluptatem

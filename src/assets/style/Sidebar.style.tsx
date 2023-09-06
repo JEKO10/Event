@@ -66,9 +66,9 @@ export const Main = styled.main`
       text-align: center;
       margin-bottom: 32px;
 
-      @media ${devices.desktopL} {
+      /* @media ${devices.desktopL} {
         font-size: 45px;
-      }
+      } */
 
       @media ${devices.laptopL} {
         font-size: 56px;
