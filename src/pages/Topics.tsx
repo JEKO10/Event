@@ -19,14 +19,14 @@ const Topics = () => {
            </ol>`;
 
   return (
-    <section>
+    <>
       <SinglePageNav />
       <SinglePageHeader
         title={"Teme konferencije i raspored sesija"}
         body={body}
       ></SinglePageHeader>
       <SinglePageMain body={mainBody} />
-    </section>
+    </>
   );
 };
 

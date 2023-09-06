@@ -101,19 +101,19 @@ const Navbar = () => {
       <img src={Logo} alt="Logo" />
       <ul>
         <li>
-          <Link to="/info/o-beranama"> O Beranama</Link>
+          <Link to="/info/o-beranama">O Beranama</Link>
         </li>
         <li>
           <Link to="/info/program-konferencije">Program konferencije</Link>
         </li>
         <li>
-          <Link to="/info/cilj-konferencije">Cilj konferencije</Link>
+          <Link to="/cilj-konferencije">Cilj konferencije</Link>
         </li>
       </ul>
       <div>
-        <p>8.9.2023.</p>
-        <p>9.9.2023.</p>
-        <p>10.9.2023.</p>
+        <p>19.9.2023.</p>
+        <p>20.9.2023.</p>
+        <p>21.9.2023.</p>
       </div>
     </Nav>
   );

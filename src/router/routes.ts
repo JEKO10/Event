@@ -3,6 +3,7 @@ import SingleNew from "../pages/SingleNew";
 import SinglePage from "../pages/SinglePage";
 import SingleWork from "../pages/SingleWork";
 import Topics from "../pages/Topics";
+import Goal from "../pages/Goal";
 
 const routes = [
   {
@@ -11,18 +12,19 @@ const routes = [
     element: Home,
   },
   { id: 1, path: "/teme-i-raspored", element: Topics },
+  { id: 2, path: "/cilj-konferencije", element: Goal },
   {
-    id: 2,
+    id: 7,
     path: "info/:path",
     element: SinglePage,
   },
   {
-    id: 3,
+    id: 8,
     path: "radovi/:path",
     element: SingleWork,
   },
   {
-    id: 4,
+    id: 9,
     path: "vijesti/:path",
     element: SingleNew,
   },

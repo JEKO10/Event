@@ -21,7 +21,7 @@
     "id": 3,
     "title": "Cilj konferencije",
     "path": "cilj-konferencije",
-    "route": "info"
+    "route": ""
   },
   {
     "id": 4,
@@ -39,12 +39,6 @@
     "id": 6,
     "title": "Uputstvo za pisanje radova",
     "path": "uputstvo-za-pisanje-radova",
-    "route": "radovi"
-  },
-  {
-    "id": 7,
-    "title": "Infomacije za autore",
-    "path": "infomacije-za-autore",
     "route": "radovi"
   },
   {
