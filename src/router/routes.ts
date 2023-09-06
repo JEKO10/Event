@@ -4,6 +4,7 @@ import SinglePage from "../pages/SinglePage";
 import SingleWork from "../pages/SingleWork";
 import Topics from "../pages/Topics";
 import Goal from "../pages/Goal";
+import Committees from "../pages/Committees";
 
 const routes = [
   {
@@ -13,6 +14,7 @@ const routes = [
   },
   { id: 1, path: "/teme-i-raspored", element: Topics },
   { id: 2, path: "/cilj-konferencije", element: Goal },
+  { id: 3, path: "/odbori", element: Committees },
   {
     id: 7,
     path: "info/:path",

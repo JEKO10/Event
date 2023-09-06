@@ -25,30 +25,31 @@ const Navbar = () => {
         <FixedMenu>
           <ul>
             <li>
-              <Link to="/info/o-beranama" onClick={() => handleClick()}>
+              <Link to="/o-beranama" onClick={() => handleClick()}>
                 O Beranama
               </Link>
             </li>
             <li>
               <Link
-                to="/info/program-konferencije"
+                to="https://docs.google.com/document/d/1rZ4IUo48ddZV4mfDaF025Jeoi8faDq8W/edit?usp=sharing&ouid=108204098677108985370&rtpof=true&sd=true"
+                target="_blank"
                 onClick={() => handleClick()}
               >
                 Program konferencije
               </Link>
             </li>
             <li>
-              <Link to="/info/teme-i-raspored" onClick={() => handleClick()}>
+              <Link to="/teme-i-raspored" onClick={() => handleClick()}>
                 Teme konferencije i raspored sesija
               </Link>
             </li>
             <li>
-              <Link to="/info/cilj-konferencije" onClick={() => handleClick()}>
+              <Link to="/cilj-konferencije" onClick={() => handleClick()}>
                 Cilj konferencije
               </Link>
             </li>
             <li>
-              <Link to="/info/odbori" onClick={() => handleClick()}>
+              <Link to="/odbori" onClick={() => handleClick()}>
                 Odbori
               </Link>
             </li>
@@ -60,19 +61,8 @@ const Navbar = () => {
           </ul>
           <ul>
             <li>
-              <Link
-                to="/radovi/uputstvo-za-pisanje-radova"
-                onClick={() => handleClick()}
-              >
-                Uputstvo za pisanje radova
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/radovi/infomacije-za-autore"
-                onClick={() => handleClick()}
-              >
-                Infomacije za autore
+              <Link to="/informacije-za-autore" onClick={() => handleClick()}>
+                Informacije za autore
               </Link>
             </li>
             <li>
