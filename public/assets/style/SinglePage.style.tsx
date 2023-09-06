@@ -150,8 +150,6 @@ export const Header = styled.section`
   }
 
   article {
-    ${flexMixin({ justify: "flex-end", align: "flex-end" })};
-    flex-direction: column;
     padding-left: 40px;
     text-align: right;
 
@@ -187,20 +185,6 @@ export const Header = styled.section`
         font-size: 45px;
       }
     }
-
-    /* h3 {
-      font-size: 60px;
-      text-align: center;
-      margin: 2rem 0;
-    }
-
-    ul {
-      text-align: left;
-
-      li {
-        margin: 2rem 0;
-      }
-    } */
 
     p {
       max-width: 1000px;

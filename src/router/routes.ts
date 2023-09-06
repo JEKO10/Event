@@ -2,6 +2,7 @@ import Home from "../pages/Home";
 import SingleNew from "../pages/SingleNew";
 import SinglePage from "../pages/SinglePage";
 import SingleWork from "../pages/SingleWork";
+import Topics from "../pages/Topics";
 
 const routes = [
   {
@@ -9,18 +10,19 @@ const routes = [
     path: "/",
     element: Home,
   },
+  { id: 1, path: "/teme-i-raspored", element: Topics },
   {
-    id: 1,
+    id: 2,
     path: "info/:path",
     element: SinglePage,
   },
   {
-    id: 2,
+    id: 3,
     path: "radovi/:path",
     element: SingleWork,
   },
   {
-    id: 3,
+    id: 4,
     path: "vijesti/:path",
     element: SingleNew,
   },

@@ -13,9 +13,9 @@
   },
   {
     "id": 2,
-    "title": "Teme konferencije",
-    "path": "teme-konferencije",
-    "route": "info"
+    "title": "Teme konferencije i raspored sesija",
+    "path": "teme-i-raspored",
+    "route": ""
   },
   {
     "id": 3,
@@ -55,18 +55,12 @@
   },
   {
     "id": 9,
-    "title": "Raspored sesija",
-    "path": "raspored-sesija",
-    "route": "info"
-  },
-  {
-    "id": 10,
     "title": "Sponzori",
     "path": "sponzori",
     "route": "info"
   },
   {
-    "id": 11,
+    "id": 10,
     "title": "Foto galerija",
     "path": "foto-galerija",
     "route": "radovi"

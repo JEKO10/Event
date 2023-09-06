@@ -38,8 +38,8 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/info/teme-konferencije" onClick={() => handleClick()}>
-                Teme konferencije
+              <Link to="/info/teme-i-raspored" onClick={() => handleClick()}>
+                Teme konferencije i raspored sesija
               </Link>
             </li>
             <li>
@@ -81,11 +81,6 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/info/raspored-sesija" onClick={() => handleClick()}>
-                Raspored sesija
-              </Link>
-            </li>
-            <li>
               <Link to="/info/sponzori" onClick={() => handleClick()}>
                 Sponzori
               </Link>
@@ -106,10 +101,10 @@ const Navbar = () => {
       <img src={Logo} alt="Logo" />
       <ul>
         <li>
-          <Link to="/info/program-konferencije">Program konferencije</Link>
+          <Link to="/info/o-beranama"> O Beranama</Link>
         </li>
         <li>
-          <Link to="/info/teme-konferencije">Teme konferencije</Link>
+          <Link to="/info/program-konferencije">Program konferencije</Link>
         </li>
         <li>
           <Link to="/info/cilj-konferencije">Cilj konferencije</Link>
