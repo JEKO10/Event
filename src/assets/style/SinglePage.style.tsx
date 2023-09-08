@@ -177,6 +177,8 @@ export const Header = styled.section`
 
       @media ${devices.laptopS} {
         font-size: 60px;
+        text-align: center;
+        width: 100%;
       }
 
       @media ${devices.mobile} {
@@ -208,7 +210,7 @@ export const Header = styled.section`
 `;
 
 export const Main = styled.section`
-  /* ${flexMixin({ justify: "space-between", align: "flex-start" })}; */
+  ${flexMixin({ justify: "space-between", align: "flex-start" })};
   padding: 80px 65px;
 
   @media ${devices.laptopL} {
@@ -223,6 +225,23 @@ export const Main = styled.section`
 
   @media ${devices.mobile} {
     padding: 50px 20px 80px;
+  }
+
+  article {
+    padding-right: 50px;
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+
+    @media ${devices.desktopS} {
+      padding-right: 0;
+    }
+
+    @media ${devices.mobile} {
+      font-size: 18.5px;
+      margin: 20px auto;
+    }
   }
 
   h3 {
@@ -254,19 +273,19 @@ export const Main = styled.section`
   }
 
   p {
-    /* max-width: 1000px; */
+    max-width: 1150px;
     font-size: 25px;
     font-weight: 600;
     line-height: 35px;
     padding-right: 20px;
 
     @media ${devices.desktopS} {
-      /* max-width: 800px; */
+      max-width: 800px;
     }
 
     @media ${devices.laptopL} {
       font-size: 22px;
-      /* max-width: 700px; */
+      max-width: 700px;
       margin: 0 5px 0 5px;
     }
 

@@ -21,14 +21,17 @@ const SinglePageHeader: React.FC<SinglePageHeaderProps> = ({ title, body }) => {
       <Sidebar />
       <article>
         <h2 dangerouslySetInnerHTML={{ __html: titleWithSpan }} />
-        {/* {Array.isArray(body) ? (
+        {Array.isArray(body) ? (
           body.map((paragraph, index) => (
-            <p key={index} dangerouslySetInnerHTML={{ __html: paragraph }} />
+            <p
+              key={index}
+              dangerouslySetInnerHTML={{ __html: paragraph }}
+              style={{ margin: "1rem 0" }}
+            />
           ))
         ) : (
           <p dangerouslySetInnerHTML={{ __html: body as string }} />
-        )} */}
-        <p>{body}</p>
+        )}
       </article>
     </Header>
   );

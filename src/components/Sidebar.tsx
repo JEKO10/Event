@@ -30,12 +30,10 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/info/teme-i-raspored">
-            Teme konferencije i raspored sesija
-          </Link>
+          <Link to="/teme-i-raspored">Teme konferencije i raspored sesija</Link>
         </li>
         <li>
-          <Link to="/info/cilj-konferencije">Cilj konferencije</Link>
+          <Link to="/cilj-konferencije">Cilj konferencije</Link>
         </li>
         <li>
           <Link to="#" onClick={handleOdboriClick}>
