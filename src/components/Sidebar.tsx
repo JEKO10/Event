@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
-  // const params = useParams();
 
   const handleOdboriClick = (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
@@ -49,19 +48,19 @@ const Sidebar = () => {
           </ul>
         </li>
         <li>
-          <Link to="/radovi/prijava-radova">Prijava radova</Link>
+          <Link to="#">Prijava radova</Link>
         </li>
         <li>
           <Link to="/informacije-za-autore">Informacije za autore</Link>
         </li>
         <li>
-          <Link to="/radovi/zbornik-radova">Zbornik radova</Link>
+          <Link to="#">Zbornik radova</Link>
         </li>
         <li>
-          <Link to="/info/sponzori">Sponzori</Link>
+          <Link to="#">Sponzori</Link>
         </li>
         <li>
-          <Link to="/radovi/foto-galerija">Foto galerija</Link>
+          <Link to="#">Foto galerija</Link>
         </li>
       </Side>
     </section>

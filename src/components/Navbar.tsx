@@ -54,7 +54,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/radovi/prijava-radova" onClick={() => handleClick()}>
+              <Link to="#" onClick={() => handleClick()}>
                 Prijava radova
               </Link>
             </li>
@@ -66,17 +66,17 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/radovi/zbornik-radova" onClick={() => handleClick()}>
+              <Link to="#" onClick={() => handleClick()}>
                 Zbornik radova
               </Link>
             </li>
             <li>
-              <Link to="/info/sponzori" onClick={() => handleClick()}>
+              <Link to="#" onClick={() => handleClick()}>
                 Sponzori
               </Link>
             </li>
             <li>
-              <Link to="/radovi/foto-galerija" onClick={() => handleClick()}>
+              <Link to="#" onClick={() => handleClick()}>
                 Foto galerija
               </Link>
             </li>

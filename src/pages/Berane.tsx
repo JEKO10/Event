@@ -88,6 +88,12 @@ const Berane = () => {
           забрињавајућу старосну структуру становништва, што потврђују званични
           статистички подаци.
         </p>
+        <p>
+          Putem sledećeg linka možete preuzeti Strateški plan Berana:
+          <a href="/src/assets/documents/strateski-plan.pdf" download>
+            Preuzmite Strateški plan Berana
+          </a>
+        </p>
       </Image>
     </>
   );

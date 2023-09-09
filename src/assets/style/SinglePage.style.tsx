@@ -328,6 +328,10 @@ export const Image = styled.section`
     line-height: 35px;
     margin: 80px auto;
 
+    a {
+      margin: 0 10px;
+    }
+
     @media ${devices.tablet} {
       max-width: 100%;
       font-size: 20px;
