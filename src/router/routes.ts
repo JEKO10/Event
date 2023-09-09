@@ -6,6 +6,7 @@ import Topics from "../pages/Topics";
 import Goal from "../pages/Goal";
 import Committees from "../pages/Committees";
 import Berane from "../pages/Berane";
+import AuthorInfo from "../pages/AuthorInfo";
 
 const routes = [
   {
@@ -17,6 +18,7 @@ const routes = [
   { id: 2, path: "/cilj-konferencije", element: Goal },
   { id: 3, path: "/odbori", element: Committees },
   { id: 4, path: "/o-beranama", element: Berane },
+  { id: 5, path: "/informacije-za-autore", element: AuthorInfo },
   {
     id: 7,
     path: "info/:path",

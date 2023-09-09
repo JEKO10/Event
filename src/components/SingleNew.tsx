@@ -12,7 +12,7 @@ type SingleNewProps = {
 };
 
 const SingleNew: React.FC<SingleNewProps> = ({
-  path,
+  // path,
   banner,
   title,
   body,
@@ -33,7 +33,8 @@ const SingleNew: React.FC<SingleNewProps> = ({
   }, []);
 
   return (
-    <Link to={`vijesti/${path}`}>
+    // <Link to={`vijesti/${path}`}>
+    <Link to="#">
       <img src={banner} alt="img" />
       <NewsInfo>
         <h4>{date}</h4>

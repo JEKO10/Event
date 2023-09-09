@@ -12,7 +12,7 @@ export const SocialsContainer = styled.section`
   ${flexMixin({ justify: "space-between", align: "center" })};
   height: 146px;
   width: 796px;
-  margin: 2rem auto 5rem;
+  margin: 10rem auto 5rem;
   padding: 20px 50px;
   border-radius: 50px;
 
