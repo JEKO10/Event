@@ -1,9 +1,23 @@
 import { styled, keyframes } from "styled-components";
-import { devices, flexMixin, secondaryColor } from "./GlobalStyles";
+import {
+  devices,
+  flexMixin,
+  primaryColor,
+  secondaryColor,
+} from "./GlobalStyles";
 
 const changeColor = keyframes`
   0% {
     color: #fff;
+  }
+  100% {
+    color: ${secondaryColor};
+  }
+`;
+
+const changeColorDate = keyframes`
+  0% {
+    color: ${primaryColor};
   }
   100% {
     color: ${secondaryColor};
@@ -195,6 +209,10 @@ export const Header = styled.section`
       font-size: 25px;
       font-weight: 600;
       line-height: 35px;
+
+      span {
+        animation: ${changeColorDate} 500ms linear infinite alternate;
+      }
 
       @media ${devices.tablet} {
         max-width: 100%;
