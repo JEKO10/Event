@@ -90,6 +90,7 @@ export const Nav = styled.nav`
 
     li {
       font-size: 28.8px;
+      text-transform: uppercase;
       margin: 0 32px;
       cursor: pointer;
 
@@ -167,7 +168,6 @@ export const FixedMenu = styled.article`
       text-align: left;
       margin: 1rem;
       border-radius: 5px;
-      max-width: 110px;
 
       @media ${devices.tablet} {
         font-size: 1.1rem;
@@ -176,6 +176,10 @@ export const FixedMenu = styled.article`
 
       @media ${devices.mobile} {
         font-size: 0.8rem;
+      }
+
+      @media ${devices.mobileS} {
+        max-width: 110px;
       }
     }
   }

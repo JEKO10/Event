@@ -327,10 +327,14 @@ export const Image = styled.section`
   text-align: center;
 
   img {
+    height: 533px;
+    width: 800px;
     display: block;
     margin: 0 auto;
+    border-radius: 10px;
 
     @media ${devices.laptopL} {
+      height: initial;
       width: 90%;
     }
 

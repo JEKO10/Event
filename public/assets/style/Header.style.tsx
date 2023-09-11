@@ -12,7 +12,7 @@ export const HeaderContainer = styled.section`
       rgba(0, 69, 116, 0) 75%,
       rgba(0, 69, 116, 0.6) 100%
     ),
-    url(/src/assets/images/panorama.jpg) center/cover no-repeat;
+    url(/assets/images/panorama.jpg) center/cover no-repeat;
   /* fixed */
 
   @media ${devices.laptopS} {

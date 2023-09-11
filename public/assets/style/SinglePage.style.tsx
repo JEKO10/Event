@@ -1,9 +1,23 @@
 import { styled, keyframes } from "styled-components";
-import { devices, flexMixin, secondaryColor } from "./GlobalStyles";
+import {
+  devices,
+  flexMixin,
+  primaryColor,
+  secondaryColor,
+} from "./GlobalStyles";
 
 const changeColor = keyframes`
   0% {
     color: #fff;
+  }
+  100% {
+    color: ${secondaryColor};
+  }
+`;
+
+const changeColorDate = keyframes`
+  0% {
+    color: ${primaryColor};
   }
   100% {
     color: ${secondaryColor};
@@ -150,6 +164,8 @@ export const Header = styled.section`
   }
 
   article {
+    ${flexMixin({ justify: "flex-end", align: "flex-end" })};
+    flex-direction: column;
     padding-left: 40px;
     text-align: right;
 
@@ -175,6 +191,8 @@ export const Header = styled.section`
 
       @media ${devices.laptopS} {
         font-size: 60px;
+        text-align: center;
+        width: 100%;
       }
 
       @media ${devices.mobile} {
@@ -191,6 +209,10 @@ export const Header = styled.section`
       font-size: 25px;
       font-weight: 600;
       line-height: 35px;
+
+      span {
+        animation: ${changeColorDate} 500ms linear infinite alternate;
+      }
 
       @media ${devices.tablet} {
         max-width: 100%;
@@ -223,8 +245,53 @@ export const Main = styled.section`
     padding: 50px 20px 80px;
   }
 
+  article {
+    padding-right: 50px;
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+
+    @media ${devices.desktopS} {
+      padding-right: 0;
+    }
+
+    @media ${devices.mobile} {
+      font-size: 18.5px;
+      margin: 20px auto;
+    }
+  }
+
+  h3 {
+    font-size: 100px;
+    text-align: center;
+    padding: 5rem 0;
+
+    @media ${devices.tablet} {
+      font-size: 70px;
+    }
+
+    @media ${devices.mobile} {
+      font-size: 50px;
+    }
+  }
+
+  ol {
+    ${flexMixin({ justify: "center", align: "center" })};
+    flex-direction: column;
+
+    @media ${devices.mobile} {
+      list-style-type: none;
+    }
+
+    li {
+      margin: 2rem 0;
+      padding: 0 10px;
+    }
+  }
+
   p {
-    max-width: 1000px;
+    max-width: 1150px;
     font-size: 25px;
     font-weight: 600;
     line-height: 35px;
@@ -237,17 +304,20 @@ export const Main = styled.section`
     @media ${devices.laptopL} {
       font-size: 22px;
       max-width: 700px;
+      margin: 0 5px 0 5px;
     }
 
     @media ${devices.laptopS} {
       text-align: center;
       max-width: 100%;
       margin-top: 50px;
-      padding: 0;
+      padding: 0 5px 0 5px;
     }
 
     @media ${devices.mobileS} {
       font-size: 20px;
+      margin: 0;
+      padding: 0;
     }
   }
 `;
@@ -257,10 +327,14 @@ export const Image = styled.section`
   text-align: center;
 
   img {
+    height: 533px;
+    width: 800px;
     display: block;
     margin: 0 auto;
+    border-radius: 10px;
 
     @media ${devices.laptopL} {
+      height: initial;
       width: 90%;
     }
 
@@ -275,6 +349,10 @@ export const Image = styled.section`
     font-weight: 600;
     line-height: 35px;
     margin: 80px auto;
+
+    a {
+      margin: 0 10px;
+    }
 
     @media ${devices.tablet} {
       max-width: 100%;
