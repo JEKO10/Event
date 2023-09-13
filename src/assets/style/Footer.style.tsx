@@ -29,6 +29,6 @@ export const FooterContainer = styled.footer`
 
   @media ${devices.laptopS} {
     flex-direction: column;
-    height: 100px;
+    height: 140px;
   }
 `;

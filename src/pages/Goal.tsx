@@ -1,4 +1,3 @@
-import React from "react";
 import SinglePageNav from "../components/SinglePageNav";
 import SinglePageHeader from "../components/SinglePageHeader";
 

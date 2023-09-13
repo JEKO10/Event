@@ -1,7 +1,7 @@
 import Home from "../pages/Home";
 import SingleNew from "../pages/SingleNew";
 import SinglePage from "../pages/SinglePage";
-import SingleWork from "../pages/SingleWork";
+// import SingleWork from "../pages/SingleWork";
 import Topics from "../pages/Topics";
 import Goal from "../pages/Goal";
 import Committees from "../pages/Committees";
@@ -24,11 +24,11 @@ const routes = [
     path: "info/:path",
     element: SinglePage,
   },
-  {
-    id: 8,
-    path: "radovi/:path",
-    element: SingleWork,
-  },
+  // {
+  //   id: 8,
+  //   path: "radovi/:path",
+  //   element: SingleWork,
+  // },
   {
     id: 9,
     path: "vijesti/:path",

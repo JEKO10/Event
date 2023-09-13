@@ -262,34 +262,6 @@ export const Main = styled.section`
     }
   }
 
-  h3 {
-    font-size: 100px;
-    text-align: center;
-    padding: 5rem 0;
-
-    @media ${devices.tablet} {
-      font-size: 70px;
-    }
-
-    @media ${devices.mobile} {
-      font-size: 50px;
-    }
-  }
-
-  ol {
-    ${flexMixin({ justify: "center", align: "center" })};
-    flex-direction: column;
-
-    @media ${devices.mobile} {
-      list-style-type: none;
-    }
-
-    li {
-      margin: 2rem 0;
-      padding: 0 10px;
-    }
-  }
-
   p {
     max-width: 1150px;
     font-size: 25px;
@@ -364,6 +336,38 @@ export const Image = styled.section`
     @media ${devices.mobileS} {
       font-size: 18.5px;
       margin: 40px auto;
+    }
+  }
+
+  h3 {
+    font-size: 100px;
+    text-align: center;
+    padding: 5rem 0;
+
+    @media ${devices.tablet} {
+      font-size: 70px;
+    }
+
+    @media ${devices.mobile} {
+      font-size: 50px;
+    }
+  }
+
+  ol {
+    ${flexMixin({ justify: "center", align: "center" })};
+    flex-direction: column;
+
+    @media ${devices.laptop} {
+      list-style-type: none;
+    }
+
+    li {
+      margin: 2rem 0;
+      padding: 0 10px;
+
+      @media ${devices.tablet} {
+        padding: 0;
+      }
     }
   }
 `;

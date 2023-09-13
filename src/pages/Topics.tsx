@@ -1,5 +1,5 @@
+import { Image } from "../assets/style/SinglePage.style";
 import SinglePageHeader from "../components/SinglePageHeader";
-import SinglePageMain from "../components/SinglePageMain";
 import SinglePageNav from "../components/SinglePageNav";
 
 const Topics = () => {
@@ -25,7 +25,10 @@ const Topics = () => {
         title={"Teme konferencije i raspored sesija"}
         body={body}
       ></SinglePageHeader>
-      <SinglePageMain body={mainBody} />
+      {/* <SinglePageMain body={mainBody} /> */}
+      <Image>
+        <p dangerouslySetInnerHTML={{ __html: mainBody }} />
+      </Image>
     </>
   );
 };
