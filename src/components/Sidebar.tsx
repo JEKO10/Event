@@ -21,12 +21,7 @@ const Sidebar = () => {
           <Link to="/o-beranama">O Beranama</Link>
         </li>
         <li>
-          <Link
-            to="https://docs.google.com/document/d/1rZ4IUo48ddZV4mfDaF025Jeoi8faDq8W/edit?usp=sharing&ouid=108204098677108985370&rtpof=true&sd=true"
-            target="_blank"
-          >
-            Program konferencije
-          </Link>
+          <Link to="/program-konferencije">Program konferencije</Link>
         </li>
         <li>
           <Link to="/teme-i-raspored">Teme konferencije i raspored sesija</Link>
@@ -40,27 +35,27 @@ const Sidebar = () => {
           </Link>
           <ul>
             <li>
-              <Link to="/odbori">Organizacioni</Link>
+              <Link to="/">Organizacioni</Link>
             </li>
             <li>
-              <Link to="/odbori">Naučni</Link>
+              <Link to="/">Naučni</Link>
             </li>
           </ul>
         </li>
         <li>
-          <Link to="#">Prijava radova</Link>
+          <Link to="/">Prijava radova</Link>
         </li>
         <li>
           <Link to="/informacije-za-autore">Informacije za autore</Link>
         </li>
         <li>
-          <Link to="#">Zbornik radova</Link>
+          <Link to="/">Zbornik radova</Link>
         </li>
         <li>
-          <Link to="#">Sponzori</Link>
+          <Link to="/">Sponzori</Link>
         </li>
         <li>
-          <Link to="#">Foto galerija</Link>
+          <Link to="/">Foto galerija</Link>
         </li>
       </Side>
     </section>

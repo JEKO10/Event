@@ -31,11 +31,7 @@ const SinglePageNav = () => {
               </Link>
             </li>
             <li>
-              <Link
-                to="https://docs.google.com/document/d/1rZ4IUo48ddZV4mfDaF025Jeoi8faDq8W/edit?usp=sharing&ouid=108204098677108985370&rtpof=true&sd=true"
-                target="_blank"
-                onClick={() => handleClick()}
-              >
+              <Link to="/program-konferencije" onClick={() => handleClick()}>
                 Program konferencije
               </Link>
             </li>
@@ -50,12 +46,12 @@ const SinglePageNav = () => {
               </Link>
             </li>
             <li>
-              <Link to="/odbori" onClick={() => handleClick()}>
+              <Link to="/" onClick={() => handleClick()}>
                 Odbori
               </Link>
             </li>
             <li>
-              <Link to="#" onClick={() => handleClick()}>
+              <Link to="/" onClick={() => handleClick()}>
                 Prijava radova
               </Link>
             </li>
@@ -67,17 +63,17 @@ const SinglePageNav = () => {
               </Link>
             </li>
             <li>
-              <Link to="#" onClick={() => handleClick()}>
+              <Link to="/" onClick={() => handleClick()}>
                 Zbornik radova
               </Link>
             </li>
             <li>
-              <Link to="#" onClick={() => handleClick()}>
+              <Link to="/" onClick={() => handleClick()}>
                 Sponzori
               </Link>
             </li>
             <li>
-              <Link to="#" onClick={() => handleClick()}>
+              <Link to="/" onClick={() => handleClick()}>
                 Foto galerija
               </Link>
             </li>
@@ -99,13 +95,13 @@ const SinglePageNav = () => {
       </div>
       <SingleList>
         <li>
-          <Link to="/info/program-konferencije">Program konferencije</Link>
+          <Link to="/program-konferencije">Program konferencije</Link>
         </li>
         <li>
-          <Link to="/info/teme-konferencije">Teme konferencije</Link>
+          <Link to="/teme-i-raspored">Teme konferencije</Link>
         </li>
         <li>
-          <Link to="/info/cilj-konferencije">Cilj konferencije</Link>
+          <Link to="/cilj-konferencije">Cilj konferencije</Link>
         </li>
       </SingleList>
     </Nav>

@@ -15,6 +15,18 @@ const changeColor = keyframes`
   }
 `;
 
+const blinker = keyframes`
+  0% {
+  color: ${secondaryColor}
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    color: ${primaryColor};
+  }
+`;
+
 const changeColorDate = keyframes`
   0% {
     color: ${primaryColor};
@@ -211,7 +223,8 @@ export const Header = styled.section`
       line-height: 35px;
 
       span {
-        animation: ${changeColorDate} 500ms linear infinite alternate;
+        /* animation: ${changeColorDate} 500ms linear infinite alternate; */
+        animation: ${blinker} 200ms infinite alternate;
       }
 
       @media ${devices.tablet} {
@@ -368,6 +381,29 @@ export const Image = styled.section`
       @media ${devices.tablet} {
         padding: 0;
       }
+    }
+  }
+
+  ul {
+    ${flexMixin({ justify: "center", align: "flex-start" })};
+    flex-direction: column;
+    list-style-type: none;
+
+    li {
+      font-size: 1.5rem;
+      margin: 0.5rem 0;
+
+      @media ${devices.laptopL} {
+        font-size: 1.3rem;
+      }
+
+      @media ${devices.mobile} {
+        font-size: 1.1rem;
+      }
+    }
+
+    @media ${devices.laptopS} {
+      align-items: center;
     }
   }
 `;

@@ -3,9 +3,8 @@ import SinglePageHeader from "../components/SinglePageHeader";
 
 const AuthorInfo = () => {
   const infoText =
-    `Prvi poziv za dostavljanje apstrakta: <span>15.10.</span> <br />
-        Prvi poziv za dostavljanje konačnih radova: <span>10.10.</span> <br />
-        Prvi poziv za dostavljanje konačnih radova: <span>15.10.</span>  <br />  <br />
+    `Poziv za dostavljanje rezimea: <span> 5.10.</span> <br />
+        Poziv za dostavljanje konačnih radova: <span>15.10.</span> <br /> <br />
         Na sledećem linku možete preuzeti informacije za autore: <br />` +
     '<a href="/src/assets/documents/uputstvo-za-autore.doc" download>' +
     "Preuzmite informacije za autore" +
@@ -20,3 +19,4 @@ const AuthorInfo = () => {
 };
 
 export default AuthorInfo;
+// Drugi poziv za dostavljanje konačnih radova: <span>15.10.</span>  <br />  <br />

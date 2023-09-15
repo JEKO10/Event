@@ -30,11 +30,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link
-                to="https://docs.google.com/document/d/1rZ4IUo48ddZV4mfDaF025Jeoi8faDq8W/edit?usp=sharing&ouid=108204098677108985370&rtpof=true&sd=true"
-                target="_blank"
-                onClick={() => handleClick()}
-              >
+              <Link to="/program-konferencije" onClick={() => handleClick()}>
                 Program konferencije
               </Link>
             </li>
@@ -49,12 +45,12 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/odbori" onClick={() => handleClick()}>
+              <Link to="/" onClick={() => handleClick()}>
                 Odbori
               </Link>
             </li>
             <li>
-              <Link to="#" onClick={() => handleClick()}>
+              <Link to="/" onClick={() => handleClick()}>
                 Prijava radova
               </Link>
             </li>
@@ -66,17 +62,17 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="#" onClick={() => handleClick()}>
+              <Link to="/" onClick={() => handleClick()}>
                 Zbornik radova
               </Link>
             </li>
             <li>
-              <Link to="#" onClick={() => handleClick()}>
+              <Link to="/" onClick={() => handleClick()}>
                 Sponzori
               </Link>
             </li>
             <li>
-              <Link to="#" onClick={() => handleClick()}>
+              <Link to="/" onClick={() => handleClick()}>
                 Foto galerija
               </Link>
             </li>
@@ -91,20 +87,20 @@ const Navbar = () => {
       <img src={Logo} alt="Logo" />
       <ul>
         <li>
-          <Link to="/info/o-beranama">O Beranama</Link>
+          <Link to="/o-beranama">O Beranama</Link>
         </li>
         <li>
-          <Link to="/info/program-konferencije">Program konferencije</Link>
+          <Link to="/program-konferencije">Program konferencije</Link>
         </li>
         <li>
           <Link to="/cilj-konferencije">Cilj konferencije</Link>
         </li>
       </ul>
       <div>
-        {/* <p>19.9.2023.</p>
-        <p>20.9.2023.</p>
-        <p>21.9.2023.</p> */}
-        <p>+382 67 275 690</p>
+        <p>2.11.2023.</p>
+        <p>3.11.2023.</p>
+        <p>4.11.2023.</p>
+        {/* <p>+382 67 275 690</p> */}
       </div>
     </Nav>
   );
