@@ -89,9 +89,9 @@ const SinglePageNav = () => {
         <img src={Logo} alt="Logo" />
       </Link>
       <div>
-        <p>19.9.2023.</p>
-        <p>20.9.2023.</p>
-        <p>21.9.2023.</p>
+        <p>2.11.2023.</p>
+        <p>3.11.2023.</p>
+        <p>4.11.2023.</p>
       </div>
       <SingleList>
         <li>
