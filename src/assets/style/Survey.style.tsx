@@ -37,6 +37,14 @@ export const SurveyContainer = styled.section`
   }
 
   @media ${devices.laptopS} {
+    ${flexMixin({ justify: "center", align: "center" })};
+    width: 500px;
+    top: 50%;
+    left: 250px;
+    z-index: 2;
+  }
+
+  @media ${devices.tablet} {
     display: none;
   }
 

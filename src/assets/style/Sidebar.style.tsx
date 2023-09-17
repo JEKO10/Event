@@ -20,6 +20,10 @@ export const Main = styled.main`
     padding: 0 30px;
   }
 
+  @media ${devices.laptopS} {
+    position: static;
+  }
+
   > section {
     &:first-of-type {
       height: 1500px;
