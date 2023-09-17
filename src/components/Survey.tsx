@@ -104,41 +104,18 @@ const Survey = () => {
             json={surveyJson}
           />
           <div>
-            {/* <div>
-              <input
-                type="radio"
-                name="Da"
-                id="Da"
-                value="Da"
-                checked={selectedOption === "Da"}
-                onChange={handleChange}
-              />
-              <label>Da, dolazim</label>
-            </div> */}
             <div>
               <p>Glasovi za da: {answers.Da}</p>
               <p>{yesPercentage}%</p>
             </div>
           </div>
           <div>
-            {/* <div>
-              <input
-                type="radio"
-                name="Ne"
-                id="Ne"
-                value="Ne"
-                checked={selectedOption === "Ne"}
-                onChange={handleChange}
-              />
-              <label>Ne, ne dolazim</label>
-            </div> */}
             <div>
               <p>Glasova za ne: {answers.Ne}</p>
               <p>{noPercentage}%</p>
             </div>
           </div>
         </article>
-        {/* <button>Glasaj</button> */}
       </SurveyContainer>
     </section>
   );
