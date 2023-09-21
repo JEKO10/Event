@@ -80,9 +80,15 @@ const Navbar = () => {
         </FixedMenu>
       )}
       {isMenuOpen ? (
-        <RxCross1 onClick={() => setIsMenuOpen(!isMenuOpen)} />
+        <RxCross1
+          data-testid="close-menu-icon"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        />
       ) : (
-        <VscMenu onClick={() => setIsMenuOpen(!isMenuOpen)} />
+        <VscMenu
+          data-testid="menu-icon"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        />
       )}
       <img src={Logo} alt="Logo" />
       <ul>
