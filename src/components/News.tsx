@@ -4,7 +4,7 @@ import SingleNew from "./SingleNew";
 
 const News = () => {
   return (
-    <NewsSection>
+    <NewsSection data-testid="news-section">
       {news.map((singleNew) => (
         <SingleNew key={singleNew.id} {...singleNew} />
       ))}
