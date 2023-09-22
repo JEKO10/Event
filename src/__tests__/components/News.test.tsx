@@ -14,17 +14,20 @@ describe("News component", () => {
 
   it("should render the news section", () => {
     const newsSection = screen.getByTestId("news-section");
+
     expect(newsSection).toBeInTheDocument();
   });
 
   it("should render news items", () => {
     const newsItems = screen.getAllByTestId("news-item");
+
     expect(newsItems.length).toBe(news.length);
   });
 
   it("should display news titles", () => {
     news.forEach((singleNew) => {
       const newsTitle = screen.getByText(singleNew.title);
+
       expect(newsTitle).toBeInTheDocument();
     });
   });
@@ -32,6 +35,7 @@ describe("News component", () => {
   it("should display news descriptions", () => {
     news.forEach((singleNew) => {
       const newsDescription = screen.getByText(singleNew.title);
+
       expect(newsDescription).toBeInTheDocument();
     });
   });

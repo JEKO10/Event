@@ -14,7 +14,7 @@ const Sidebar = () => {
   };
 
   return (
-    <section>
+    <section data-testid="sidebar-section">
       <img src={Menu} alt="Menu" />
       <Side showDropdown={showDropdown}>
         <li>
