@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import Footer from "../../components/Footer";
 
-describe("Footer component", () => {
+describe("tests for Footer component", () => {
   beforeEach(() => {
     render(<Footer />);
   });

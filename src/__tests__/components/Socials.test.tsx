@@ -5,7 +5,7 @@ beforeEach(() => {
   render(<Socials />);
 });
 
-describe("tests for socials component", () => {
+describe("tests for Socials component", () => {
   test("should render SocialsContainer section", () => {
     const socialsContainer = screen.getByRole("article");
 

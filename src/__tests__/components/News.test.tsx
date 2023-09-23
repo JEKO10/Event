@@ -3,7 +3,7 @@ import News from "../../components/News";
 import news from "../../news.json";
 import { BrowserRouter as Router } from "react-router-dom";
 
-describe("News component", () => {
+describe("tests for News and SingleNew components", () => {
   beforeEach(() => {
     render(
       <Router>
