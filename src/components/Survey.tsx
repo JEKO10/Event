@@ -111,7 +111,7 @@ const Survey = () => {
           </div>
           <div>
             <div>
-              <p>Glasova za ne: {answers.Ne}</p>
+              <p>Glasovi za ne: {answers.Ne}</p>
               <p>{noPercentage}%</p>
             </div>
           </div>
