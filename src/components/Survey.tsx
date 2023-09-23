@@ -105,13 +105,13 @@ const Survey = () => {
           />
           <div>
             <div>
-              <p>Glasovi za da: {answers.Da}</p>
+              <p data-testid="votes">Glasovi za da: {answers.Da}</p>
               <p>{yesPercentage}%</p>
             </div>
           </div>
           <div>
             <div>
-              <p>Glasovi za ne: {answers.Ne}</p>
+              <p data-testid="votes">Glasovi za ne: {answers.Ne}</p>
               <p>{noPercentage}%</p>
             </div>
           </div>

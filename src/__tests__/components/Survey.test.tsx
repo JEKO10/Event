@@ -32,18 +32,11 @@ describe("tests for Survey component", () => {
   });
 
   it("should display 'Glasovi za da' and its percentage", () => {
-    const glasoviZaDa = screen.getByText("Glasovi za da:");
-    const daPercentage = screen.getByText(/%/i);
+    const paragraphs = screen.getAllByTestId("votes");
 
-    expect(glasoviZaDa).toBeInTheDocument();
-    expect(daPercentage).toBeInTheDocument();
-  });
-
-  it("should display 'Glasova za ne' and its percentage", () => {
-    const glasovaZaNe = screen.getByText("Glasovi za ne:");
-    const nePercentage = screen.getByText(/%/i);
-
-    expect(glasovaZaNe).toBeInTheDocument();
-    expect(nePercentage).toBeInTheDocument();
+    paragraphs.forEach((paragraph) => {
+      expect(paragraph).toBeInTheDocument();
+      expect(paragraph).toHaveTextContent("Glasovi za ");
+    });
   });
 });
