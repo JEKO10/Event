@@ -1,12 +1,12 @@
 import { BrowserRouter as Router } from "react-router-dom"; // Import BrowserRouter
 import { fireEvent, render, screen } from "@testing-library/react";
-import Navbar from "../../components/Navbar";
+import SinglePageNav from "../../components/SinglePageNav";
 
 describe("tests for Navbar components", () => {
   beforeEach(() => {
     render(
       <Router>
-        <Navbar />
+        <SinglePageNav />
       </Router>
     );
   });
@@ -14,17 +14,6 @@ describe("tests for Navbar components", () => {
   it("should render Logo with a specific alt text", () => {
     const logoImage = screen.getByAltText("Logo");
     expect(logoImage).toBeInTheDocument();
-  });
-
-  it("should render navigation links", () => {
-    const linkOBeranama = screen.getByText("O Beranama");
-    expect(linkOBeranama).toBeInTheDocument();
-
-    const linkProgram = screen.getByText("Program konferencije");
-    expect(linkProgram).toBeInTheDocument();
-
-    const linkCilj = screen.getByText("Cilj konferencije");
-    expect(linkCilj).toBeInTheDocument();
   });
 
   it("should render date elements", () => {

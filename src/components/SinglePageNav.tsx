@@ -81,9 +81,15 @@ const SinglePageNav = () => {
         </FixedMenu>
       )}
       {isMenuOpen ? (
-        <RxCross1 onClick={() => setIsMenuOpen(!isMenuOpen)} />
+        <RxCross1
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          data-testid="close-menu-icon"
+        />
       ) : (
-        <VscMenu onClick={() => setIsMenuOpen(!isMenuOpen)} />
+        <VscMenu
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          data-testid="menu-icon"
+        />
       )}
       <Link to="/">
         <img src={Logo} alt="Logo" />
