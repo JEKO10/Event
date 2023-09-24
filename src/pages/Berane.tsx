@@ -77,11 +77,11 @@ upotpunjuju prelijepi pejzaž Bjelasice i daju joj posebnu draž.`,
           </p>
         </article>
         <article>
-          <img src={BeraneIMG} alt="OPSTINA BERANE" />
+          <img src={BeraneIMG} alt="OPSTINA Berane" />
         </article>
       </Main>
       <Image>
-        <img src={Centar} alt="Centar" />
+        <img src={Centar} alt="Centar Berane" />
         <p>
           Na području opštine Berane živi 28.488 stanovnika, od čega je 14.238
           žena ili 49,98% i 14.250 muškaraca ili 50,02 %. U urbanom gradskom
