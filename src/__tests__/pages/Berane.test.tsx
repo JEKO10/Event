@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import Berane from "../../pages/Berane";
 import { BrowserRouter as Router } from "react-router-dom";
 
-describe("Berane Page", () => {
+describe("tests for Berane Page", () => {
   beforeEach(() => {
     render(
       <Router>

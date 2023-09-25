@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import AuthorInfo from "../../pages/AuthorInfo";
 import { BrowserRouter as Router } from "react-router-dom";
 
-describe("AuthorInfo Page", () => {
+describe("tests for AuthorInfo Page", () => {
   beforeEach(() => {
     render(
       <Router>

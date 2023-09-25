@@ -1,4 +1,4 @@
-import { Image } from "../assets/style/SinglePage.style";
+// import { Image } from "../assets/style/SinglePage.style";
 import SinglePageHeader from "../components/SinglePageHeader";
 import SinglePageNav from "../components/SinglePageNav";
 
@@ -9,7 +9,6 @@ const Committees = () => {
     <>
       <SinglePageNav />
       <SinglePageHeader title="Odbori" body={body} />
-      <Image></Image>
     </>
   );
 };
