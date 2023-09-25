@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import Topics from "../../pages/Topics";
 import { BrowserRouter as Router } from "react-router-dom";
 
-describe("Topics Component", () => {
+describe("tests for Topics page", () => {
   beforeEach(() => {
     render(
       <Router>

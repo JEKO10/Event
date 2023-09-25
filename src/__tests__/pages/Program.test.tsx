@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import Program from "../../pages/Program";
 import { BrowserRouter as Router } from "react-router-dom";
 
-describe("Program Component", () => {
+describe("tests for Program page", () => {
   beforeEach(() => {
     render(
       <Router>
