@@ -26,7 +26,7 @@ const SinglePageHeader: React.FC<SinglePageHeaderProps> = ({ title, body }) => {
             <p
               key={index}
               dangerouslySetInnerHTML={{ __html: paragraph }}
-              style={{ margin: "1rem 0" }}
+              style={{ margin: "0.5rem 0" }}
             />
           ))
         ) : (

@@ -35,10 +35,10 @@ const Sidebar = () => {
           </Link>
           <ul>
             <li>
-              <Link to="/">Organizacioni</Link>
+              <Link to="/odbori">Organizacioni</Link>
             </li>
             <li>
-              <Link to="/">Naučni</Link>
+              <Link to="/odbori">Naučni</Link>
             </li>
           </ul>
         </li>

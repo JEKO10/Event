@@ -162,7 +162,9 @@ export const Header = styled.section`
   }
 
   @media ${devices.laptopS} {
-    margin: 60px 0;
+    margin: 60px 0px;
+    justify-content: center;
+    width: 100%;
   }
 
   @media ${devices.mobile} {
@@ -182,10 +184,8 @@ export const Header = styled.section`
     text-align: right;
 
     @media ${devices.laptopS} {
+      width: 100%;
       text-align: center;
-    }
-
-    @media ${devices.laptopS} {
       padding: 0 20px;
     }
 
@@ -212,7 +212,7 @@ export const Header = styled.section`
       }
 
       @media ${devices.mobileS} {
-        font-size: 45px;
+        font-size: 40px;
       }
     }
 
@@ -225,6 +225,10 @@ export const Header = styled.section`
       span {
         /* animation: ${changeColorDate} 500ms linear infinite alternate; */
         animation: ${blinker} 200ms infinite alternate;
+      }
+
+      @media ${devices.laptopS} {
+        width: 100%;
       }
 
       @media ${devices.tablet} {
@@ -325,6 +329,18 @@ export const Image = styled.section`
 
     @media ${devices.tablet} {
       width: 100%;
+    }
+  }
+
+  h2 {
+    font-size: 4rem;
+
+    @media ${devices.mobile} {
+      font-size: 2.8rem;
+    }
+
+    span {
+      color: ${secondaryColor};
     }
   }
 
