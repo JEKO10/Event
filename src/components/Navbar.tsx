@@ -67,7 +67,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/" onClick={() => handleClick()}>
+              <Link to="/sponzori" onClick={() => handleClick()}>
                 Sponzori
               </Link>
             </li>

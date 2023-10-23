@@ -52,7 +52,7 @@ const Sidebar = () => {
           <Link to="/">Zbornik radova</Link>
         </li>
         <li>
-          <Link to="/">Sponzori</Link>
+          <Link to="/sponzori">Sponzori</Link>
         </li>
         <li>
           <Link to="/">Foto galerija</Link>
