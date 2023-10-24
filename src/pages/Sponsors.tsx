@@ -70,10 +70,16 @@ const Sponsors = () => {
     },
   ];
 
+  const body = [
+    "Prva naučna konferencija sa međunarodnim učešćem u organizaciji opštine Berane",
+    "Izazovi i perspektive za razvoj opštine Berane kao preduslov za valorizaciju sjeverne regije Crne Gore",
+    "Prijatelji konferencije:",
+  ];
+
   return (
     <section>
       <SinglePageNav />
-      <SinglePageHeader title="Sponzori" body={""} />
+      <SinglePageHeader title="Sponzori" body={body} />
       <SponsorsContainer>
         {organizations.map((sponsor) => (
           <div

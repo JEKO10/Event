@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "./GlobalStyles";
 
 export const SponsorsContainer = styled.article`
   display: grid;
@@ -6,6 +7,14 @@ export const SponsorsContainer = styled.article`
   gap: 50px;
   max-width: 80vw;
   margin: 0 auto;
+
+  @media ${devices.laptopL} {
+    max-width: 90vw;
+  }
+
+  @media ${devices.mobileS} {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
 
   div {
     padding: 10px;
