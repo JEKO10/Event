@@ -5,12 +5,18 @@ import Ministarstvo from "../assets/images/ministarstvo.jpg";
 import Uprava from "../assets/images/uprava.jpg";
 import Hotel from "../assets/images/hotel.png";
 import Cedis from "../assets/images/cedis.png";
-import Reviko from "../assets/images/reviko.png";
+import Reviko from "../assets/images/reviko.jpg";
 import Epcg from "../assets/images/epcg.jpg";
 import Granit from "../assets/images/granit.png";
 import Viktorija from "../assets/images/viktorija.png";
 import Eloksir from "../assets/images/eloksir.png";
-import Logo from "../assets/images/logo-placeholder.png";
+import TO from "../assets/images/to.jpg";
+import Zdravlje from "../assets/images/zdravlje.jpg";
+import VV from "../assets/images/VV.jpg";
+import Progres from "../assets/images/progres.jpg";
+import Ortak from "../assets/images/ortak.jpg";
+import GeoLux from "../assets/images/geo-lux.jpg";
+import Stab from "../assets/images/stab.png";
 
 const Sponsors = () => {
   const organizations = [
@@ -23,6 +29,14 @@ const Sponsors = () => {
       src: Uprava,
     },
     {
+      name: "Ministarstvo zdravlja",
+      src: Zdravlje,
+    },
+    {
+      name: "Turistička organizacija Berane",
+      src: TO,
+    },
+    {
       name: "Hotel Berane",
       src: Hotel,
     },
@@ -33,8 +47,6 @@ const Sponsors = () => {
     {
       name: "Reviko Podgorica",
       src: Reviko,
-      bg: "#000",
-      color: "#fff",
     },
     {
       name: "Elektroprivreda",
@@ -42,7 +54,7 @@ const Sponsors = () => {
     },
     {
       name: "V&V Bar",
-      src: Logo,
+      src: VV,
     },
     {
       name: "Granit Berane",
@@ -50,15 +62,15 @@ const Sponsors = () => {
     },
     {
       name: "Knjižara Progres Berane",
-      src: Logo,
+      src: Progres,
     },
     {
       name: "Ortak Berane",
-      src: Logo,
+      src: Ortak,
     },
     {
       name: "Geo-lux Berane",
-      src: Logo,
+      src: GeoLux,
     },
     {
       name: "Viktorija Berane",
@@ -67,6 +79,10 @@ const Sponsors = () => {
     {
       name: "Eloksir Plus Berane",
       src: Eloksir,
+    },
+    {
+      name: "Pab Štab",
+      src: Stab,
     },
   ];
 
@@ -82,11 +98,8 @@ const Sponsors = () => {
       <SinglePageHeader title="Sponzori" body={body} />
       <SponsorsContainer>
         {organizations.map((sponsor) => (
-          <div
-            key={sponsor.name}
-            style={{ background: sponsor.bg, color: sponsor.color }}
-          >
-            <img src={sponsor.src} alt="SPONSORS IMAGE" />
+          <div key={sponsor.name}>
+            <img src={sponsor.src} alt={sponsor.name} />
             <p>{sponsor.name}</p>
           </div>
         ))}
