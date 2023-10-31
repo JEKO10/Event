@@ -3,16 +3,8 @@ import SinglePageHeader from "../components/SinglePageHeader";
 import SinglePageNav from "../components/SinglePageNav";
 
 const Program = () => {
-  const body = `Agenda Naučne Konferencije sa Međunarodnim Učešćem <br /> <br />
-        Izazovi i Perspektive za Razvoj Opštine Berane kao Preduslov za Valorizaciju Sjeverne Regije Crne Gore - IZperaBA <br/> <br/>
-        <a
-          href="/assets/documents/Agenda IZperaBA.doc"
-          download
-          style={{ fontSize: "1.3rem" }}
-        >
-          Preuzmite Agendu
-        </a>
-        `;
+  const body = `Program Naučne Konferencije sa Međunarodnim Učešćem 
+        Izazovi i Perspektive za Razvoj Opštine Berane kao Preduslov za Valorizaciju Sjeverne Regije Crne Gore - IZperaBA`;
 
   return (
     <>

@@ -9,6 +9,7 @@ import Berane from "../pages/Berane";
 import AuthorInfo from "../pages/AuthorInfo";
 import Program from "../pages/Program";
 import Sponsors from "../pages/Sponsors";
+import Agenda from "../pages/Agenda";
 
 const routes = [
   {
@@ -23,8 +24,9 @@ const routes = [
   { id: 5, path: "/informacije-za-autore", element: AuthorInfo },
   { id: 6, path: "/program-konferencije", element: Program },
   { id: 7, path: "/sponzori", element: Sponsors },
+  { id: 8, path: "/agenda", element: Agenda },
   {
-    id: 8,
+    id: 9,
     path: "info/:path",
     element: SinglePage,
   },
@@ -34,7 +36,7 @@ const routes = [
   //   element: SingleWork,
   // },
   {
-    id: 9,
+    id: 10,
     path: "vijesti/:path",
     element: SingleNew,
   },

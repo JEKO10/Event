@@ -24,6 +24,9 @@ const Sidebar = () => {
           <Link to="/program-konferencije">Program konferencije</Link>
         </li>
         <li>
+          <Link to="/agenda">Agenda konferencije</Link>
+        </li>
+        <li>
           <Link to="/teme-i-raspored">Teme konferencije i raspored sesija</Link>
         </li>
         <li>

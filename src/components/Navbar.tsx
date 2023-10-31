@@ -35,6 +35,11 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
+              <Link to="/agenda" onClick={() => handleClick()}>
+                Agenda konferencije
+              </Link>
+            </li>
+            <li>
               <Link to="/teme-i-raspored" onClick={() => handleClick()}>
                 Teme konferencije i raspored sesija
               </Link>
