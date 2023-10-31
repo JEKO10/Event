@@ -6,7 +6,7 @@ const AuthorInfo = () => {
     `Poziv za dostavljanje rezimea: <span> 5.10.</span> <br />
         Poziv za dostavljanje konačnih radova: <span>15.10.</span> <br /> <br />
         Na sledećem linku možete preuzeti informacije za autore: <br />` +
-    '<a href="/src/assets/documents/uputstvo-za-autore.doc" download>' +
+    '<a href="/assets/documents/uputstvo-za-autore.doc" download>' +
     "Preuzmite informacije za autore" +
     "</a>";
 

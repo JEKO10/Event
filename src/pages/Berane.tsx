@@ -137,7 +137,7 @@ upotpunjuju prelijepi pejzaž Bjelasice i daju joj posebnu draž.`,
         <img src={BeraneImg2} alt="Berane" />
         <p>
           Putem sledećeg linka možete preuzeti Strateški plan Berana:
-          <a href="/src/assets/documents/strateski-plan.pdf" download>
+          <a href="/assets/documents/strateski-plan.pdf" download>
             Preuzmite Strateški plan Berana
           </a>
         </p>
