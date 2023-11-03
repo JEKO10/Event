@@ -77,7 +77,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/" onClick={() => handleClick()}>
+              <Link to="/foto-galerija" onClick={() => handleClick()}>
                 Foto galerija
               </Link>
             </li>

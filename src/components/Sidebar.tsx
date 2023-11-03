@@ -58,7 +58,7 @@ const Sidebar = () => {
           <Link to="/sponzori">Sponzori</Link>
         </li>
         <li>
-          <Link to="/">Foto galerija</Link>
+          <Link to="/foto-galerija">Foto galerija</Link>
         </li>
       </Side>
     </section>
