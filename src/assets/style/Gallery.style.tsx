@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { secondaryColor } from "./GlobalStyles";
+import { devices, flexMixin, secondaryColor } from "./GlobalStyles";
 
 export const ImgContainer = styled.article`
   max-width: 90vw;
@@ -9,6 +9,10 @@ export const ImgContainer = styled.article`
   grid-template-columns: repeat(auto-fill, minmax(386px, 1fr));
   grid-auto-rows: 300px;
   gap: 15px;
+
+  @media ${devices.mobile} {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
 
   > div {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
@@ -29,6 +33,7 @@ export const ImgContainer = styled.article`
 `;
 
 export const FullImg = styled.div`
+  ${flexMixin({ justify: "center", align: "center" })};
   position: fixed;
   top: 50%;
   left: 50%;
@@ -37,7 +42,6 @@ export const FullImg = styled.div`
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 2;
-  text-align: center;
 
   svg {
     position: absolute;
