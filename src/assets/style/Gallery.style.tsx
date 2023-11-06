@@ -11,6 +11,7 @@ export const ImgContainer = styled.article`
   gap: 15px;
 
   > div {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     overflow: hidden;
   }
 

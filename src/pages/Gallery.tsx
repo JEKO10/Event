@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import SinglePageHeader from "../components/SinglePageHeader";
 import SinglePageNav from "../components/SinglePageNav";
 import { FullImg, ImgContainer } from "../assets/style/Gallery.style";
@@ -7,9 +7,16 @@ import { RxCross1 } from "react-icons/rx";
 const Gallery = () => {
   const body = `Foto galerija Naučne Konferencije sa Međunarodnim Učešćem 
         Izazovi i Perspektive za Razvoj Opštine Berane kao Preduslov za Valorizaciju Sjeverne Regije Crne Gore - IZperaBA 2023.`;
+  const imgRef = useRef<HTMLImageElement>(null);
 
   const [galleryImages, setGalleryImages] = useState<string[]>([]);
   const [selectedImage, setSelectedImage] = useState<string>("");
+
+  const clickOutside = (e: MouseEvent) => {
+    if (!imgRef.current?.contains(e.target as Node)) {
+      setSelectedImage("");
+    }
+  };
 
   useEffect(() => {
     const gallery = Object.values(
@@ -20,6 +27,7 @@ const Gallery = () => {
     );
 
     setGalleryImages(gallery);
+    document.addEventListener("click", clickOutside, true);
   }, []);
 
   useEffect(() => {
@@ -36,7 +44,7 @@ const Gallery = () => {
       <SinglePageHeader title="Foto galerija" body={body} />
       <ImgContainer>
         {galleryImages.map((image) => (
-          <div onClick={() => setSelectedImage(image)}>
+          <div onClick={() => setSelectedImage(image)} key={image}>
             <img
               key={image}
               src={image}
@@ -50,7 +58,11 @@ const Gallery = () => {
       {selectedImage && (
         <FullImg>
           <RxCross1 onClick={() => setSelectedImage("")} />
-          <img src={selectedImage} alt={`Full-size ${selectedImage}`} />
+          <img
+            src={selectedImage}
+            ref={imgRef}
+            alt={`Full-size ${selectedImage}`}
+          />
         </FullImg>
       )}
     </section>
