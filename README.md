@@ -2,4 +2,6 @@ Website for my municipality for my reference, progress and multi platform develo
 
 I added Jest for testing my React components and pages.
 
+I plan to create archive for them, because they will host event next year as well.
+
 I have created tests for every component and page.
