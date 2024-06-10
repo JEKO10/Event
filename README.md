@@ -9,9 +9,9 @@
 - [Project task](#project-task)
 - [Project overview](#project-overview)
 - [Built with](#built-with)
-- [Live preview](#live-preview)
 - [Lighthouse Score](#lighthouse-score)
-- 
+- [Live preview](#live-preview)
+  
 ## Project task
 
 Website for my municipality for my reference, progress, and multi-platform development. The website is about upcoming science events in my town.
