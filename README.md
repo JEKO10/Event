@@ -10,7 +10,8 @@
 - [Project overview](#project-overview)
 - [Built with](#built-with)
 - [Live preview](#live-preview)
-
+- [Lighthouse Score](#lighthouse-score)
+- 
 ## Project task
 
 Website for my municipality for my reference, progress, and multi-platform development. The website is about upcoming science events in my town.
@@ -26,6 +27,19 @@ There are many pages and information about this event and its organization—for
 - Styled Components
 - SurveyJS
 - Netlify
+
+## Lighthouse Score
+
+![Lighthouse Score](https://github.com/JEKO10/Event/assets/84730554/6aefef4f-7050-45ab-af76-c9f622e6f4c5)
+
+- **Performance**: 95
+- **Accessibility**: 95
+- **Best Practices**: 96
+- **SEO**: 100
+
+*Last updated: 6/10/2024*
+
+I continuously strive to maintain and improve these scores with each update.
 
 ## Live preview
 
